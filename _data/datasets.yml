@@ -1,16 +1,29 @@
 # ---------------------------------------------------------------------------
 # Datasets constructed by Daniel. Add an entry per dataset; drop the file into
-# site/files/ and point `download` at it.
+# site/files/ and point `download` at it (a site-relative path).
 #
-# Fields: title, coverage, updated, description, paper (link to the Research
-#         page or DOI), download, code
+# Fields: title, coverage, updated, description, notes, citation,
+#         download, paper, code
 # ---------------------------------------------------------------------------
 
-- title: "Daily discount rates of cantonal and private banks, 1834–1893"
-  coverage: "Daily · Switzerland · 1834–1893"
+- title: "Swiss discount rates, 1834–1893"
+  coverage: "Daily, weekly, monthly and annual · 8 series · 1834–1893"
+  updated: "2026-07-17"
   description: >
-    Discount rates for Swiss cantonal and private banks, collected for the
-    study of money market integration in 19th century Switzerland. Discount
-    rate dispersion serves as a measure of financial market segmentation.
+    Discount rates for Swiss cantonal and private banks in Bern, Basel, Zurich,
+    St. Gallen, Lausanne and Geneva, underlying the study of money market
+    integration in nineteenth-century Switzerland. Discount rate dispersion
+    serves as a measure of financial market segmentation. Annual series also
+    include the existing data from Jöhr (1915) for comparison and accuracy
+    checks. Detailed sources are given in Appendix B of the paper.
+  notes: >
+    Weekly data are recommended: daily discount rate changes are partly sourced
+    from newspapers, which may be subject to brief publication lags. Dates on
+    the weekly series correspond to a Sunday, with the average computed over the
+    following week.
+  citation: >
+    Kaufmann, D., and Stuart, R., ‘Private money and money market integration:
+    The role of payments infrastructure in nineteenth-century Switzerland’,
+    Economic History Review, 2026.
+  download: "/files/DiscountRateData_Public.xlsx"
   paper: "https://doi.org/10.1111/ehr.70131"
-  download: "https://www.dankaufmann.com/_files/ugd/681cdc_b711c0268cf340d7935dbeb430f71991.xlsx?dn=DiscountRateData_Public.xlsx"
