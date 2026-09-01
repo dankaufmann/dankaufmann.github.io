@@ -7,20 +7,17 @@
 # ---------------------------------------------------------------------------
 
 - title: "Swiss discount rates, 1834–1893"
-  coverage: "Daily, weekly, monthly and annual · 8 series · 1834–1893"
+  coverage: "Daily, weekly, monthly and annual · 8 cities · 1834–1893"
   updated: "2026-07-17"
   description: >
     Discount rates for Swiss cantonal and private banks in Bern, Basel, Zurich,
-    St. Gallen, Lausanne and Geneva, underlying the study of money market
-    integration in nineteenth-century Switzerland. Discount rate dispersion
-    serves as a measure of financial market segmentation. Annual series also
-    include the existing data from Jöhr (1915) for comparison and accuracy
+    St. Gallen, Lausanne and Geneva, underlying our study of money market
+    integration in nineteenth-century Switzerland. Annual series include the 
+    existing data from Jöhr (1915) for comparison and accuracy
     checks. Detailed sources are given in Appendix B of the paper.
   notes: >
-    Weekly data are recommended: daily discount rate changes are partly sourced
-    from newspapers, which may be subject to brief publication lags. Dates on
-    the weekly series correspond to a Sunday, with the average computed over the
-    following week.
+    We recommend the use of weekly data. Daily discount rates are partly sourced
+    from newspapers, which may be subject to brief publication lags.
   citation: >
     Kaufmann, D., and Stuart, R., ‘Private money and money market integration:
     The role of payments infrastructure in nineteenth-century Switzerland’,
