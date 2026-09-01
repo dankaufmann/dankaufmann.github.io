@@ -281,6 +281,8 @@ articles:
     links:
       paper: "http://ideas.repec.org/a/mcb/jmoncb/v44y2012ip211-236.html"
       wp: "http://www.snb.ch/n/mmr/reference/working_paper_2012_09/source/working_paper_2012_09.en.pdf"
+    news:
+      - {label: "Jackson Hole speech, T. Jordan", url: "https://www.snb.ch/en/mmr/speeches/id/ref_20150828_tjn/source/ref_20150828_tjn.en.pdf"}
 
   - title: "Is there a Swiss price puzzle?"
     authors:
