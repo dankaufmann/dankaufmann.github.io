@@ -1,0 +1,13 @@
+{%- assign d = include.item -%}
+<div class="dataset">
+  <h3>{{ d.title }}</h3>
+  {%- if d.coverage %}<p class="meta">{{ d.coverage }}{% if d.updated %} · updated {{ d.updated }}{% endif %}</p>{% endif %}
+  {%- if d.description %}<p>{{ d.description }}</p>{% endif %}
+  {%- if d.download or d.paper or d.code %}
+  <p class="pub-buttons">
+    {%- if d.download %}<a class="btn" href="{{ d.download | relative_url }}">Download</a>{% endif -%}
+    {%- if d.paper %}<a class="btn" href="{{ d.paper }}">Paper</a>{% endif -%}
+    {%- if d.code %}<a class="btn" href="{{ d.code }}">Code</a>{% endif -%}
+  </p>
+  {%- endif %}
+</div>

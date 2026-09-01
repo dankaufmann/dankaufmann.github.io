@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------------------
+# Datasets constructed by Daniel. Add an entry per dataset; drop the file into
+# site/files/ and point `download` at it.
+#
+# Fields: title, coverage, updated, description, paper (link to the Research
+#         page or DOI), download, code
+# ---------------------------------------------------------------------------
+
+- title: "Daily discount rates of cantonal and private banks, 1834–1893"
+  coverage: "Daily · Switzerland · 1834–1893"
+  description: >
+    Discount rates for Swiss cantonal and private banks, collected for the
+    study of money market integration in 19th century Switzerland. Discount
+    rate dispersion serves as a measure of financial market segmentation.
+  paper: "https://doi.org/10.1111/ehr.70131"
+  download: "https://www.dankaufmann.com/_files/ugd/681cdc_b711c0268cf340d7935dbeb430f71991.xlsx?dn=DiscountRateData_Public.xlsx"
