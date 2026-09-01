@@ -341,3 +341,6 @@ h4 {
   text-indent: -1rem;
 }
 .linkname { font-weight: 600; }
+
+/* stacked toggles inside a dataset entry sit closer together */
+.dataset .abstract + .abstract { margin-top: 0.25rem; }
