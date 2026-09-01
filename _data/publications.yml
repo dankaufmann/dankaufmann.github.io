@@ -1,59 +1,463 @@
 # ---------------------------------------------------------------------------
-# PLACEHOLDER ENTRIES — every record below is invented to demonstrate layout.
-# All of it is replaced with the real list in Phase 2.
+# Publications — ported from dankaufmann.com (Wix), 2026-09-01.
 #
-# Schema (all fields optional except title / authors / year):
-#   title,  authors[],  year,  journal,  volume,  pages,  doi,  abstract
-#   links:  paper, wp, code, data, doi   (omit a key -> that button is not shown)
-#   me:     the author name to render in bold (set globally, see _config.yml)
+# Author order verified against Crossref (by DOI) and RePEc. The old Wix page
+# used a "with X" convention that did not record author order; every entry
+# below is the real published order. Daniel's name is rendered bold
+# automatically via `me:` in _config.yml — it must match exactly.
+#
+# Fixed button labels, in render order:
+#   paper | wp | update | appendix | code | data
+# Press coverage goes in `news:` and renders as small links, not buttons.
 # ---------------------------------------------------------------------------
 
 articles:
-  - title: "Placeholder — Monetary Policy and the Swiss Money Market"
-    authors: ["D. Kaufmann", "A. Coauthor"]
+  - title: "Multiple monetary policy shocks from daily data: A heteroskedasticity IV approach"
+    authors:
+      - {name: "Marc Burri", url: "https://marcburri.github.io/"}
+      - {name: "Daniel Kaufmann"}
     year: 2026
-    journal: "Journal of Placeholder Economics"
-    volume: 88
-    pages: "1–34"
-    doi: "10.0000/placeholder.2026.001"
+    journal: "Economics Letters"
+    volume: "268"
+    pages: "113091"
+    doi: "10.1016/j.econlet.2026.113091"
     abstract: >
-      This is placeholder abstract text used only to show how a longer
-      paragraph sits inside the expandable panel. It runs to several lines so
-      that the spacing, measure, and toggle behaviour can be judged properly
-      before the real abstracts are entered.
+      We identify the causal effects of target and path shocks using IVs
+      exploiting the change in the variance-covariance matrix of financial
+      market variables on days with monetary policy announcements.
     links:
-      paper: "https://example.org/published-version"
-      wp: "/files/placeholder-wp.pdf"
-      code: "https://github.com/dankaufmann"
+      paper: "https://doi.org/10.1016/j.econlet.2026.113091"
+      wp: "https://ideas.repec.org/p/irn/wpaper/26-06.html"
+      code: "https://github.com/dankaufmann/hetiv"
 
-  - title: "Placeholder — Nominal Rigidities over Long Historical Episodes"
-    authors: ["D. Kaufmann"]
+  - title: "Private money and money market integration: The role of payments infrastructure in 19th century Switzerland, 1846–1893"
+    authors:
+      - {name: "Daniel Kaufmann"}
+      - {name: "Rebecca Stuart", url: "https://www.rebeccastuart.net/"}
+    year: 2026
+    journal: "Economic History Review"
+    pages: "1–22"
+    doi: "10.1111/ehr.70131"
+    abstract: >
+      We show that discount rate dispersion, a measure of financial market
+      segmentation, was relatively high under a period of unregulated free
+      banking. Only with the Banknote Act of 1881 did discount rate dispersion
+      fall to similar levels as in other countries. Therefore, we argue that
+      bank regulation was a key factor driving money market integration in
+      Switzerland.
+    links:
+      paper: "https://doi.org/10.1111/ehr.70131"
+      wp: "https://ideas.repec.org/p/irn/wpaper/24-05.html"
+      data: "https://www.dankaufmann.com/_files/ugd/681cdc_b711c0268cf340d7935dbeb430f71991.xlsx?dn=DiscountRateData_Public.xlsx"
+
+  - title: "Overnight rate and signalling effects of central bank bills"
+    authors:
+      - {name: "Fabio Canetg", url: "https://sites.google.com/view/fabiocanetg/home"}
+      - {name: "Daniel Kaufmann"}
+    year: 2022
+    journal: "European Economic Review"
+    volume: "143"
+    doi: "10.1016/j.euroecorev.2022.104060"
+    note: "A previous version was titled 'Shocking interest rate floors'."
+    abstract: >
+      We identify the causal effect of surprise changes in an interest rate
+      floor exploiting regular auctions of SNB Bills (Swiss central bank debt
+      securities). We find that a restrictive interest rate floor shock causes
+      a higher money market rate, an appreciation of the Swiss franc, and a
+      decline in stock prices.
+    links:
+      paper: "https://doi.org/10.1016/j.euroecorev.2022.104060"
+      wp: "https://ideas.repec.org/p/irn/wpaper/19-02.html"
+      appendix: "https://drive.switch.ch/index.php/s/ZMSc9RhKizOKQhU"
+      code: "https://drive.switch.ch/index.php/s/YCvU1ahOXuHulMD"
+    news:
+      - {label: "Finanz und Wirtschaft", url: "https://www.dankaufmann.com/_files/ugd/681cdc_193485d599454aeb90418e32bd21a31f.pdf"}
+
+  - title: "Do sticky wages matter? New evidence from matched firm-survey and register data"
+    authors:
+      - {name: "Anne Kathrin Funk", url: "https://sites.google.com/view/annekathrinfunk/home"}
+      - {name: "Daniel Kaufmann"}
+    year: 2022
+    journal: "Economica"
+    volume: "89(355)"
+    pages: "689–712"
+    doi: "10.1111/ecca.12412"
+    abstract: >
+      We examine the role of wage rigidities after the Swiss National Bank
+      removed an exchange rate floor leading to a 1% decline in the price
+      level. We find that sticky wages caused a 0.3% decline in income, 0.9%
+      decline in employment income, and a 0.05 percentage point increase in
+      the unemployment rate.
+    links:
+      paper: "https://doi.org/10.1111/ecca.12412"
+      wp: "https://ideas.repec.org/p/irn/wpaper/20-06.html"
+      appendix: "https://drive.switch.ch/index.php/s/kPvvEukfN0ZLjmb"
+    news:
+      - {label: "Tages-Anzeiger", url: "https://blog.tagesanzeiger.ch/nevermindthemarkets/index.php/46157/mehr-lohn-trotz-krise/"}
+
+  - title: "A daily fever curve for the Swiss economy"
+    authors:
+      - {name: "Marc Burri", url: "https://marcburri.github.io/"}
+      - {name: "Daniel Kaufmann"}
+    year: 2020
+    journal: "Swiss Journal of Economics and Statistics"
+    volume: "156(6)"
+    doi: "10.1186/s41937-020-00051-z"
+    links:
+      paper: "https://sjes.springeropen.com/articles/10.1186/s41937-020-00051-z"
+      wp: "https://ideas.repec.org/p/irn/wpaper/20-05.html"
+      appendix: "https://www.dankaufmann.com/_files/ugd/681cdc_b095af3d56eb4f6b90b89778a2ee277c.pdf"
+      code: "https://github.com/dankaufmann/f-curve"
+    news:
+      - {label: "Republik", url: "https://www.republik.ch/2020/06/08/seismografie-der-krise"}
+      - {label: "Finanz und Wirtschaft", url: "https://www.fuw.ch/article/deutsche-autobauer-ziehen-europa-runter/"}
+      - {label: "Solothurner Zeitung", url: "https://www.solothurnerzeitung.ch/wirtschaft/die-wirtschaft-faengt-sich-auf-8-fakten-zu-jobs-und-konsum-die-zuversichtlich-stimmen-138126282"}
+      - {label: "Canal Alpha", url: "http://www.canalalpha.ch/actu/linvite-daniel-kaufmann-les-mecanismes-dune-crise/"}
+      - {label: "Arcinfo", url: "https://www.arcinfo.ch/dossiers/coronavirus/articles/pour-l-economiste-de-l-unine-daniel-kaufmann-le-taux-de-chomage-va-encore-croitre-apres-le-redemarrage-de-l-economie-955424"}
+
+  - title: "Is deflation costly after all? The perils of erroneous historical classifications"
+    authors:
+      - {name: "Daniel Kaufmann"}
+    year: 2020
+    journal: "Journal of Applied Econometrics"
+    volume: "35(5)"
+    pages: "614–628"
+    doi: "10.1002/jae.2762"
+    abstract: >
+      I propose a GMM estimator to estimate the relationship between deflation
+      and real activity in the US controlling for measurement error in 19th
+      century price data. I find a relevant short-fall in real activity when
+      prices were falling.
+    links:
+      paper: "https://doi.org/10.1002/jae.2762"
+      wp: "http://dx.doi.org//10.3929/ethz-a-010786535"
+      update: "https://www.dankaufmann.com/_files/ugd/681cdc_be8c4c82b9f5405496b92e31f6103a81.pdf"
+      code: "https://github.com/dankaufmann/historical_inflation"
+
+  - title: "Trend fundamentals and exchange rate dynamics"
+    authors:
+      - {name: "Florian Huber"}
+      - {name: "Daniel Kaufmann"}
+    year: 2020
+    journal: "Economica"
+    volume: "87"
+    doi: "10.1111/ecca.12334"
+    abstract: >
+      We propose a multivariate unobserved-components stochastic volatility
+      model to explain exchange rate dynamics. We find that changes in trend
+      inflation is a relevant factor explaining the persistence of exchange
+      rate fluctuations.
+    links:
+      paper: "https://doi.org/10.1111/ecca.12334"
+      wp: "http://dx.doi.org//10.3929/ethz-a-010513063"
+      update: "https://www.dankaufmann.com/_files/ugd/681cdc_3adecab2746a4867bdb8fd5940164a60.pdf"
+
+  - title: "Constrained interest rates and changing dynamics at the zero lower bound"
+    authors:
+      - {name: "Gregor Bäurle", url: "http://www.gregorbaeurle.ch/"}
+      - {name: "Daniel Kaufmann"}
+      - {name: "Sylvia Kaufmann"}
+      - {name: "Rodney Strachan"}
+    year: 2019
+    journal: "Studies in Nonlinear Dynamics & Econometrics"
+    volume: "24(2)"
+    doi: "10.1515/snde-2017-0098"
+    award: "Best paper award, SNDE 2020"
+    abstract: >
+      We propose a VAR with endogenous regime-switching to measure the impact
+      of risk premium shocks with binding and non-binding effective lower bound
+      in Switzerland. The effective lower bound leads to more persistent
+      declines in the price level and a more persistent appreciation.
+    links:
+      paper: "https://doi.org/10.1515/snde-2017-0098"
+      wp: "http://www.szgerzensee.ch/fileadmin/Dateien_Anwender/Dokumente/working_papers/wp-1602.pdf"
+
+  - title: "Nominal stability over two centuries"
+    authors:
+      - {name: "Daniel Kaufmann"}
+    year: 2019
+    journal: "Swiss Journal of Economics and Statistics"
+    volume: "155(7)"
+    pages: "1–23"
+    doi: "10.1186/s41937-019-0033-7"
+    abstract: >
+      I estimate nominal trends for Switzerland from 1800–2017 using an
+      unobserved-components stochastic-volatility model. Today's monetary
+      regime, flexible inflation targeting, is the most stable monetary regime.
+    links:
+      paper: "https://sjes.springeropen.com/articles/10.1186/s41937-019-0033-7"
+      wp: "http://dx.doi.org//10.3929/ethz-a-010416200"
+      update: "https://www.dankaufmann.com/_files/ugd/681cdc_7942cd2bec184b9bb639c68a26b3c762.pdf"
+      code: "https://drive.switch.ch/index.php/s/AUto4oc7PQJxZ72"
+
+  - title: "Measuring exchange rate, price, and output dynamics at the effective lower bound"
+    authors:
+      - {name: "Gregor Bäurle", url: "http://www.gregorbaeurle.ch/"}
+      - {name: "Daniel Kaufmann"}
+    year: 2018
+    journal: "Oxford Bulletin of Economics and Statistics"
+    volume: "80(6)"
+    pages: "1243–1266"
+    doi: "10.1111/obes.12260"
+    abstract: >
+      We propose a VAR with exogenous regime-switching to measure the impact of
+      risk premium shocks with binding and non-binding effective lower bound in
+      Switzerland. The effective lower bound leads to more persistent declines
+      in the price level and a more persistent appreciation.
+    links:
+      paper: "https://onlinelibrary.wiley.com/doi/epdf/10.1111/obes.12260"
+      wp: "https://ideas.repec.org/p/snb/snbwpa/2014-10.html"
+      update: "https://www.dankaufmann.com/_files/ugd/681cdc_189f8326ea28484796247031e493616c.pdf"
+      appendix: "https://www.dankaufmann.com/_files/ugd/681cdc_5c6635eb887b413e9459b53ac0c5a807.pdf"
+    news:
+      - {label: "Jackson Hole speech, T. Jordan", url: "https://www.snb.ch/en/mmr/speeches/id/ref_20150828_tjn/source/ref_20150828_tjn.en.pdf"}
+
+  - title: "Business tendency surveys and macroeconomic fluctuations"
+    authors:
+      - {name: "Daniel Kaufmann"}
+      - {name: "Rolf Scheufele"}
+    year: 2017
+    journal: "International Journal of Forecasting"
+    volume: "33(4)"
+    pages: "878–893"
+    doi: "10.1016/j.ijforecast.2017.04.005"
+    abstract: >
+      We use a mixed-frequency factor model to examine the forecasting
+      performance of Swiss business tendency survey data. Business tendency
+      surveys provide additional information for forecasting inflation,
+      employment growth, and the output gap.
+    links:
+      paper: "http://www.sciencedirect.com/science/article/pii/S0169207017300547"
+      wp: "http://dx.doi.org//10.3929/ethz-a-010416189"
+      update: "https://www.dankaufmann.com/_files/ugd/681cdc_fced6a00724144239af43155c21627d8.pdf"
+
+  - title: "Sticky prices or rational inattention — What can we learn from sectoral price data?"
+    authors:
+      - {name: "Daniel Kaufmann"}
+      - {name: "Sarah Lein", url: "http://www.sarah-lein.ch/"}
+    year: 2013
+    journal: "European Economic Review"
+    volume: "64"
+    pages: "384–394"
+    doi: "10.1016/j.euroecorev.2013.10.001"
+    abstract: >
+      We use a factor model to document stylized facts for Swiss sectoral
+      dynamics and confront these facts with two popular price-setting models.
+      Overall, the findings tend to support multi-sector models with sticky
+      prices rather than rational inattention.
+    links:
+      paper: "http://www.sciencedirect.com/science/article/pii/S0014292113001281"
+
+  - title: "Combining disaggregate forecasts for inflation: The SNB's ARIMA model"
+    authors:
+      - {name: "Marco Huwiler"}
+      - {name: "Daniel Kaufmann"}
+    year: 2013
+    journal: "Swiss National Bank Economic Study"
+    volume: "No. 7"
+    abstract: >
+      We evaluate the SNB's short-term forecasting model based on sectoral
+      inflation rates and propose a state-space model to deal with changes in
+      the survey frequency over time. The model performs well relative to
+      various benchmarks, in particular, over short-term horizons.
+    links:
+      paper: "http://ideas.repec.org/p/snb/snbecs/2013-07.html"
+
+  - title: "Asymmetries in price-setting behavior: New microeconometric evidence from Switzerland"
+    authors:
+      - {name: "Bo E. Honoré", url: "https://www.princeton.edu/~honore/"}
+      - {name: "Daniel Kaufmann"}
+      - {name: "Sarah Lein", url: "http://www.sarah-lein.ch/"}
+    year: 2012
+    journal: "Journal of Money, Credit and Banking"
+    volume: "44"
+    pages: "211–236"
+    doi: "10.1111/j.1538-4616.2012.00558.x"
+    abstract: >
+      We propose an econometric framework to estimate reduced-form
+      (S,s)-pricing rules from firm-level price data. Applying the estimator to
+      Swiss data, we find that the prevalence of positive relative to negative
+      price changes is largely due to a positive aggregate inflation trend.
+    links:
+      paper: "http://ideas.repec.org/a/mcb/jmoncb/v44y2012ip211-236.html"
+      wp: "http://www.snb.ch/n/mmr/reference/working_paper_2012_09/source/working_paper_2012_09.en.pdf"
+
+  - title: "Is there a Swiss price puzzle?"
+    authors:
+      - {name: "Daniel Kaufmann"}
+      - {name: "Sarah Lein", url: "http://www.sarah-lein.ch/"}
+    year: 2012
+    journal: "Swiss Journal of Economics and Statistics"
+    volume: "148(I)"
+    pages: "57–75"
+    doi: "10.1007/bf03399360"
+    abstract: >
+      We use a factor model and Swiss sectoral price data to examine whether
+      there is a price puzzle, i.e. an increase in the price level after a
+      restrictive monetary policy shock.
+    links:
+      paper: "http://www.sjes.ch/papers/2012-I-3.pdf"
+
+  - title: "Price-setting behaviour in Switzerland: Evidence from CPI micro data"
+    authors:
+      - {name: "Daniel Kaufmann"}
+    year: 2009
+    journal: "Swiss Journal of Economics and Statistics"
+    volume: "145(III)"
+    pages: "293–349"
+    doi: "10.1007/bf03399283"
+    links:
+      paper: "http://ideas.repec.org/a/ses/arsjes/2009-iii-3.html"
+      wp: "https://ideas.repec.org/p/snb/snbwpa/2008-15.html"
+
+other:
+  - title: "hetiv: Heteroskedasticity- and proxy-based IV methods"
+    authors:
+      - {name: "Marc Burri", url: "https://marcburri.github.io/"}
+      - {name: "Valentin Grob"}
+      - {name: "Daniel Kaufmann"}
+    year: 2026
+    journal: "R package version 1.0.0"
+    links:
+      code: "http://dankaufmann.github.io/hetiv"
+
+  - title: "AI in economic research: A guide for students and instructors"
+    authors:
+      - {name: "Marc Burri", url: "https://marcburri.github.io/"}
+      - {name: "Daniel Kaufmann"}
+      - {name: "Nima Ostovan"}
     year: 2024
-    journal: "Review of Placeholder Macroeconomics"
-    volume: 12
-    pages: "205–241"
-    abstract: >
-      A second placeholder abstract, deliberately shorter, so that entries of
-      differing length can be compared side by side.
+    journal: "IRENE Policy Reports 24-03, Institute of Economic Research, University of Neuchâtel"
     links:
-      paper: "https://example.org/published-version"
-      data: "/data/"
+      paper: "https://ideas.repec.org/p/irn/polrep/24-03.html"
 
-working_papers:
-  - title: "Placeholder — Identifying Monetary Policy Shocks"
-    authors: ["D. Kaufmann", "B. Coauthor", "C. Coauthor"]
+  - title: "Study to evaluate the future data compilation for the Swiss Consumer Sentiment Index"
+    authors:
+      - {name: "Daniel Kaufmann"}
     year: 2024
-    journal: "KOF Working Paper No. 000"
-    abstract: >
-      Placeholder abstract for a working paper entry. Note that this record
-      has no published link, so no "Paper" button is rendered — only the
-      working paper and the replication code.
+    journal: "Grundlagen für die Wirtschaftspolitik 43, Staatssekretariat für Wirtschaft SECO"
     links:
-      wp: "/files/placeholder-wp2.pdf"
-      code: "https://github.com/dankaufmann"
+      paper: "https://www.seco.admin.ch/dam/seco/de/dokumente/Wirtschaft/Wirtschaftslage/Konsumentenstimmung/wp_43_swiss_consumer_sentiment_index.pdf.download.pdf/wp_43_Swiss%20Consumer%20Sentiment%20Index.pdf"
 
-  - title: "Placeholder — An Entry With No Abstract and One Link"
-    authors: ["D. Kaufmann"]
-    year: 2023
+  - title: "Do bonuses offset the allocative effects of downward rigid base wages?"
+    authors:
+      - {name: "Anne Kathrin Funk", url: "https://sites.google.com/view/annekathrinfunk/home"}
+      - {name: "Daniel Kaufmann"}
+    year: 2022
+    journal: "American Economic Review: Papers & Proceedings"
+    volume: "112"
+    pages: "486–490"
+    doi: "10.1257/pandp.20221097"
+    abstract: >
+      We examine whether downward flexible wage components, such as bonuses,
+      are used as a margin of adjustment to circumvent base wage rigidities.
+      Those components indeed mitigate the allocative effects of downward
+      nominal wage rigidity. At least in Switzerland, they do not suffice to
+      completely offset the allocative effects of downward rigid base wages.
     links:
-      wp: "/files/placeholder-wp3.pdf"
+      paper: "https://doi.org/10.1257/pandp.20221097"
+
+  - title: "Some implications of the new agreement on the distribution of SNB profits"
+    authors:
+      - {name: "Daniel Kaufmann"}
+    year: 2021
+    journal: "IRENE Policy Reports 21-01, Institute of Economic Research, University of Neuchâtel"
+    links:
+      paper: "https://ideas.repec.org/p/irn/polrep/21-01.html"
+
+  - title: "Wie weiter mit der Tiefzinspolitik? Szenarien und Alternativen"
+    authors:
+      - {name: "Daniel Kaufmann"}
+    year: 2020
+    journal: "IRENE Policy Reports 20-01, Institute of Economic Research, University of Neuchâtel"
+    links:
+      paper: "https://libra.unine.ch/Publications/Daniel_Kaufmann/41752"
+      code: "https://github.com/dankaufmann/lir"
+    news:
+      - {label: "Le Temps", url: "https://www.letemps.ch/economie/daniel-kaufmann-fin-taux-negatifs-rencherirait-franc-3-7"}
+
+work_in_progress:
+  - title: "Measuring monetary policy shocks"
+    authors:
+      - {name: "Marc Burri", url: "https://marcburri.github.io/"}
+      - {name: "Daniel Kaufmann"}
+    status: "Revise and resubmit, Journal of Applied Econometrics"
+    abstract: >
+      We predict unobserved monetary policy shocks from the cross-sectional
+      impact on financial market variables estimated using IV.
+    links:
+      wp: "https://ideas.repec.org/p/irn/wpaper/24-03.html"
+
+  - title: "Robust identification of monetary policy shocks: Heteroskedasticity versus high-frequency surprises"
+    authors:
+      - {name: "Valentin Grob"}
+      - {name: "Daniel Kaufmann"}
+    status: "In progress"
+    abstract: >
+      We examine the properties of monetary policy shocks identified via
+      heteroskedasticity- and proxy-IV.
+
+  - title: "Inflation uncertainty and real interest rate trends, 1852–2022"
+    authors:
+      - {name: "Niko Hauzenberger", url: "https://scholar.google.at/citations?user=uXtLiLIAAAAJ&hl=de"}
+      - {name: "Daniel Kaufmann"}
+      - {name: "Rebecca Stuart", url: "https://www.rebeccastuart.net/"}
+      - {name: "Cédric Tille", url: "https://sites.google.com/site/cedrictilleheid/"}
+    status: "In progress"
+    note: "Previously titled 'What drives long-term interest rates? Evidence from the entire Swiss franc history 1852–2020'."
+    abstract: >
+      We construct novel monthly interest rate and exchange rate data for
+      Switzerland and analyse the most important driving forces, particularly
+      the role of inflation uncertainty.
+    links:
+      wp: "https://ideas.repec.org/p/irn/wpaper/22-03.html"
+      paper: "https://www.seco.admin.ch/seco/de/home/Publikationen_Dienstleistungen/Publikationen_und_Formulare/Strukturwandel_Wachstum/Wachstum/interest_rates_switzerland_1852-2020.html"
+
+  - title: "Regional inflation dynamics before and after the introduction of the Swiss franc, 1835–1864"
+    authors:
+      - {name: "Daniel Kaufmann"}
+      - {name: "Jannis Stefanopulos"}
+    status: "In progress"
+    abstract: >
+      We use novel price data to investigate whether inflation dynamics changed
+      after the introduction of a common currency.
+
+  - title: "Swiss economic sentiments for the 19th, 20th and 21st centuries"
+    authors:
+      - {name: "Marc Burri", url: "https://marcburri.github.io/"}
+      - {name: "Daniel Kaufmann"}
+    status: "In progress"
+    abstract: >
+      We use natural language processing to measure business cycle fluctuations
+      since the foundation of the modern Swiss Confederation.
+
+  - title: "Does government-backed lending reduce unemployment? An assessment of the Swiss COVID-19 credit program"
+    authors:
+      - {name: "Daniel Kaufmann"}
+    year: 2020
+    status: "IRENE Working Papers 20-10, Institute of Economic Research, University of Neuchâtel"
+    abstract: >
+      The paper provides causal estimates of the impact of fiscal aid on
+      unemployment identified from regional variation in exposure to the Swiss
+      COVID-19 credit program.
+    links:
+      code: "https://github.com/dankaufmann/covid19lending/"
+
+  - title: "Export prices, markups, and currency choice after a large appreciation"
+    authors:
+      - {name: "Daniel Kaufmann"}
+      - {name: "Tobias Renkin", url: "https://sites.google.com/site/tobiasrenkin/"}
+    year: 2019
+    status: "In progress"
+    abstract: >
+      We use a data set of Swiss firm-level export, import, and domestic prices
+      to show how price and markup adjustment after a large appreciation depend
+      on firm's currency choice.
+    links:
+      wp: "https://ideas.repec.org/p/irn/wpaper/19-07.html"
+      paper: "https://www.seco.admin.ch/seco/de/home/Publikationen_Dienstleistungen/Publikationen_und_Formulare/Strukturwandel_Wachstum/Strukturwandel/seco_strukturberichtersmanufacturing-prices-and-employment-after.html"
+    news:
+      - {label: "NZZ", url: "https://www.nzz.ch/wirtschaft/was-der-franken-schock-gekostet-hat-ld.1323901"}
+      - {label: "Tages-Anzeiger", url: "https://www.tagesanzeiger.ch/wirtschaft/standardwas-der-frankenschock-angerichtet-hat/story/23117020"}
+      - {label: "Le Temps", url: "https://www.letemps.ch/economie/2017/10/24/berne-disseque-effets-franc-fort"}
+      - {label: "Reuters", url: "https://www.reuters.com/article/us-swiss-franc-effect/swiss-made-helped-switzerland-weather-currency-storm-idUSKBN1CT0UT"}

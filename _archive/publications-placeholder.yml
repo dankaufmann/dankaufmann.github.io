@@ -1,0 +1,59 @@
+# ---------------------------------------------------------------------------
+# PLACEHOLDER ENTRIES — every record below is invented to demonstrate layout.
+# All of it is replaced with the real list in Phase 2.
+#
+# Schema (all fields optional except title / authors / year):
+#   title,  authors[],  year,  journal,  volume,  pages,  doi,  abstract
+#   links:  paper, wp, code, data, doi   (omit a key -> that button is not shown)
+#   me:     the author name to render in bold (set globally, see _config.yml)
+# ---------------------------------------------------------------------------
+
+articles:
+  - title: "Placeholder — Monetary Policy and the Swiss Money Market"
+    authors: ["D. Kaufmann", "A. Coauthor"]
+    year: 2026
+    journal: "Journal of Placeholder Economics"
+    volume: 88
+    pages: "1–34"
+    doi: "10.0000/placeholder.2026.001"
+    abstract: >
+      This is placeholder abstract text used only to show how a longer
+      paragraph sits inside the expandable panel. It runs to several lines so
+      that the spacing, measure, and toggle behaviour can be judged properly
+      before the real abstracts are entered.
+    links:
+      paper: "https://example.org/published-version"
+      wp: "/files/placeholder-wp.pdf"
+      code: "https://github.com/dankaufmann"
+
+  - title: "Placeholder — Nominal Rigidities over Long Historical Episodes"
+    authors: ["D. Kaufmann"]
+    year: 2024
+    journal: "Review of Placeholder Macroeconomics"
+    volume: 12
+    pages: "205–241"
+    abstract: >
+      A second placeholder abstract, deliberately shorter, so that entries of
+      differing length can be compared side by side.
+    links:
+      paper: "https://example.org/published-version"
+      data: "/data/"
+
+working_papers:
+  - title: "Placeholder — Identifying Monetary Policy Shocks"
+    authors: ["D. Kaufmann", "B. Coauthor", "C. Coauthor"]
+    year: 2024
+    journal: "KOF Working Paper No. 000"
+    abstract: >
+      Placeholder abstract for a working paper entry. Note that this record
+      has no published link, so no "Paper" button is rendered — only the
+      working paper and the replication code.
+    links:
+      wp: "/files/placeholder-wp2.pdf"
+      code: "https://github.com/dankaufmann"
+
+  - title: "Placeholder — An Entry With No Abstract and One Link"
+    authors: ["D. Kaufmann"]
+    year: 2023
+    links:
+      wp: "/files/placeholder-wp3.pdf"

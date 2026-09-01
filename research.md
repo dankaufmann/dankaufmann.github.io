@@ -2,17 +2,17 @@
 layout: default
 title: Research
 permalink: /research/
-description: Published articles and working papers by Daniel Kaufmann.
+description: Publications, policy reports, and work in progress by Daniel Kaufmann.
 ---
-
-{: .note }
-*All entries below are placeholders. The real list is ported in Phase 2 —
-editing `_data/publications.yml` is all that is needed.*
 
 ## Articles in journals
 
 {% for p in site.data.publications.articles %}{% include publication.html item=p %}{% endfor %}
 
-## Working papers
+## Selected other publications
 
-{% for p in site.data.publications.working_papers %}{% include publication.html item=p %}{% endfor %}
+{% for p in site.data.publications.other %}{% include publication.html item=p %}{% endfor %}
+
+## Work in progress
+
+{% for p in site.data.publications.work_in_progress %}{% include publication.html item=p %}{% endfor %}

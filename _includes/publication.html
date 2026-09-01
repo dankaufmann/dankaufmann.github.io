@@ -1,44 +1,57 @@
 {%- comment -%}
-Renders one publication entry from _data/publications.yml.
+Renders one entry from _data/publications.yml.
 Usage: {% include publication.html item=entry %}
 {%- endcomment -%}
 {%- assign p = include.item -%}
 <div class="pub">
 
-  <p class="pub-head">
-    <span class="pub-authors">
-      {%- for a in p.authors -%}
-        {%- if a == site.me -%}<strong>{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
-        {%- unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless -%}
-      {%- endfor -%}
-      {%- if p.year %} ({{ p.year }}){% endif -%}
-    </span>
+  <p class="pub-authors">
+    {%- for a in p.authors -%}
+      {%- if a.name == site.me -%}
+        <strong>{{ a.name }}</strong>
+      {%- elsif a.url -%}
+        <a href="{{ a.url }}">{{ a.name }}</a>
+      {%- else -%}
+        {{ a.name }}
+      {%- endif -%}
+      {%- unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless -%}
+    {%- endfor -%}
+    {%- if p.year %} ({{ p.year }}){% endif -%}
   </p>
 
   <p class="pub-title">
     {%- if p.links.paper -%}
       <a href="{{ p.links.paper }}">{{ p.title }}</a>
+    {%- elsif p.links.wp -%}
+      <a href="{{ p.links.wp }}">{{ p.title }}</a>
     {%- else -%}
       {{ p.title }}
     {%- endif -%}
   </p>
 
-  {%- if p.journal or p.doi %}
+  {%- if p.journal or p.status or p.doi %}
   <p class="pub-meta">
     {%- if p.journal %}<em>{{ p.journal }}</em>{% endif -%}
     {%- if p.volume %}, {{ p.volume }}{% endif -%}
     {%- if p.pages %}, {{ p.pages }}{% endif -%}
     {%- if p.journal %}.{% endif -%}
+    {%- if p.status %}{% if p.journal %} {% endif %}{{ p.status }}.{% endif -%}
     {%- if p.doi %} <a class="pub-doi" href="https://doi.org/{{ p.doi }}">doi:{{ p.doi }}</a>{% endif -%}
   </p>
+  {%- endif %}
+
+  {%- if p.award %}
+  <p class="pub-award">{{ p.award }}</p>
   {%- endif %}
 
   {%- if p.links %}
   <p class="pub-buttons">
     {%- if p.links.paper %}<a class="btn" href="{{ p.links.paper }}">Paper</a>{% endif -%}
-    {%- if p.links.wp %}<a class="btn" href="{{ p.links.wp | relative_url }}">Working paper</a>{% endif -%}
+    {%- if p.links.wp %}<a class="btn" href="{{ p.links.wp }}">Working paper</a>{% endif -%}
+    {%- if p.links.update %}<a class="btn" href="{{ p.links.update }}">Update</a>{% endif -%}
+    {%- if p.links.appendix %}<a class="btn" href="{{ p.links.appendix }}">Appendix</a>{% endif -%}
     {%- if p.links.code %}<a class="btn" href="{{ p.links.code }}">Code</a>{% endif -%}
-    {%- if p.links.data %}<a class="btn" href="{{ p.links.data | relative_url }}">Data</a>{% endif -%}
+    {%- if p.links.data %}<a class="btn" href="{{ p.links.data }}">Data</a>{% endif -%}
   </p>
   {%- endif %}
 
@@ -46,7 +59,16 @@ Usage: {% include publication.html item=entry %}
   <details class="abstract">
     <summary>Abstract</summary>
     <p>{{ p.abstract }}</p>
+    {%- if p.note %}<p class="pub-note">{{ p.note }}</p>{% endif %}
   </details>
+  {%- elsif p.note %}
+  <p class="pub-note">{{ p.note }}</p>
+  {%- endif %}
+
+  {%- if p.news %}
+  <p class="pub-news">In the news:
+    {%- for n in p.news %} <a href="{{ n.url }}">{{ n.label }}</a>{% unless forloop.last %} ·{% endunless %}{% endfor -%}
+  </p>
   {%- endif %}
 
 </div>

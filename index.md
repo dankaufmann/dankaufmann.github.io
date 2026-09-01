@@ -7,17 +7,13 @@ title: Home
 
 # Daniel Kaufmann
 
+## This page is work in progress. Please visit www.dankaufmann.com for up to date information on Daniel Kaufmann
+
 <p class="affiliation">
 Chair of Applied Macroeconomics, University of Neuchâtel<br>
 Research Fellow, KOF Swiss Economic Institute, ETH Zurich<br>
 Co-editor, Swiss Journal of Economics and Statistics
 </p>
-
-Daniel Kaufmann holds the Chair of Applied Macroeconomics at the University of
-Neuchâtel, where he directs the MSc in Applied Economics. His research examines
-inflation, output, interest rate, and exchange rate dynamics over long
-historical episodes, with particular attention to the effects of monetary
-policy and nominal rigidities.
 
 **Research interests:** macroeconomics · monetary economics · monetary history ·
 forecasting

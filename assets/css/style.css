@@ -263,3 +263,22 @@ img { max-width: 100%; height: auto; }
   font-size: 0.9rem;
   color: var(--ink-muted);
 }
+
+/* award, note, press */
+.pub-award {
+  font-size: 0.86rem;
+  color: #7a5c00;
+}
+.pub-note {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+.abstract .pub-note { margin: 0.4rem 0 0.2rem 1rem; padding-left: 0.85rem; }
+.pub-news {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin-top: 0.5rem !important;
+}
+.pub-news a { color: var(--ink-muted); }
+.pub-news a:hover { color: var(--link); }
