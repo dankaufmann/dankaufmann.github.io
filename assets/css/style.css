@@ -108,12 +108,20 @@ hr { border: 0; border-top: 1px solid var(--rule); margin-block: 2rem; }
 
 /* news / dated list */
 .news { list-style: none; padding-left: 0; }
-.news li { margin-bottom: 0.75rem; }
+.news li {
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+  padding-left: 8.4rem;
+  text-indent: -8.4rem;   /* hanging indent: date sits in its own column */
+}
 .news .date {
   display: inline-block;
-  min-width: 4.2rem;
+  width: 8.4rem;
+  text-indent: 0;
   color: var(--ink-muted);
   font-variant-numeric: tabular-nums;
+  font-size: 0.88rem;
+  vertical-align: top;
 }
 
 /* dataset entries on the Data page */
@@ -162,6 +170,8 @@ img { max-width: 100%; height: auto; }
   body { font-size: 16px; }
   .site-header { padding-top: 1.75rem; }
   .portrait { float: none; display: block; margin: 0 0 1.25rem 0; width: 8.5rem; }
+  .news li { padding-left: 0; text-indent: 0; }
+  .news .date { display: block; width: auto; margin-bottom: 0.1rem; }
 }
 
 /* postal address block */
