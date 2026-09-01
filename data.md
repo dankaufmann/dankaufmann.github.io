@@ -5,6 +5,7 @@ permalink: /data/
 description: Datasets constructed for research projects, available for download.
 ---
 
+## Data sets by Daniel Kaufmann
 Datasets constructed in the course of various research projects. Each entry
 gives a short description, the coverage and vintage, and a download link.
 
@@ -18,3 +19,6 @@ shape of an entry.*
   which paper it comes from.</p>
   <p><a href="#">Download CSV</a> · <a href="#">Documentation</a></p>
 </div>
+
+
+## Data sets by other researchers
