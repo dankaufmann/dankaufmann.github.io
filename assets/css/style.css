@@ -294,3 +294,8 @@ img { max-width: 100%; height: auto; }
   text-align: center;
 }
 .draft-banner a { color: #6b5a20; }
+
+.footer-profiles {
+  margin-bottom: 0.4rem;
+  line-height: 2;
+}

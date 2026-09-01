@@ -37,12 +37,12 @@
   </main>
 
   <footer class="site-footer">
-    <p>
-      &copy; {{ 'now' | date: "%Y" }} Daniel Kaufmann ·
-      <a href="https://github.com/{{ site.github }}">GitHub</a> ·
-      <a href="{{ site.linkedin }}">LinkedIn</a> ·
-      <a href="{{ site.bluesky }}">Bluesky</a>
+    <p class="footer-profiles">
+      {%- for pr in site.profiles %}
+      <a href="{{ pr.url }}">{{ pr.title }}</a>{% unless forloop.last %} <span aria-hidden="true">·</span>{% endunless %}
+      {%- endfor %}
     </p>
+    <p>&copy; {{ 'now' | date: "%Y" }} Daniel Kaufmann</p>
   </footer>
 </body>
 </html>

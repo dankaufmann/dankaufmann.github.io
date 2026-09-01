@@ -17,11 +17,26 @@ noindex: true
 # Author name rendered in bold in publication lists
 me: Daniel Kaufmann
 
-# Contact / profiles
+# Contact
 email: daniel.kaufmann@unine.ch
 github: dankaufmann
-linkedin: https://ch.linkedin.com/in/daniel-kaufmann-9763039a
-bluesky: https://bsky.app/profile/kaufmanndani.bsky.social
+
+# Footer profile links, in display order
+profiles:
+  - title: Google Scholar
+    url: https://scholar.google.ch/citations?user=paDGs-gAAAAJ&hl=en
+  - title: RePEc
+    url: https://ideas.repec.org/f/pka480.html
+  - title: ORCID
+    url: https://orcid.org/0000-0003-3260-0660
+  - title: Université de Neuchâtel
+    url: https://libra.unine.ch/entities/person/3a6c6045-2525-4eeb-bb8a-54bca41721d0
+  - title: GitHub
+    url: https://github.com/dankaufmann
+  - title: LinkedIn
+    url: https://ch.linkedin.com/in/daniel-kaufmann-9763039a
+  - title: Bluesky
+    url: https://bsky.app/profile/kaufmanndani.bsky.social
 
 # Navigation (order shown in the header)
 nav:
