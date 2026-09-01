@@ -8,7 +8,7 @@
   --link:       #14507d;
   --link-hover: #0d3b5c;
   --bg:         #ffffff;
-  --measure:    42rem;
+  --measure:    52rem;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -35,21 +35,11 @@ main,
 
 /* --- header ----------------------------------------------------------- */
 .site-header {
-  padding-top: 2.75rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
-.site-title {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-  text-decoration: none;
-}
-
 .site-nav {
-  margin-top: 0.85rem;
   padding-bottom: 0.85rem;
   border-bottom: 1px solid var(--rule);
   display: flex;
