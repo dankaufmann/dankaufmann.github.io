@@ -32,7 +32,7 @@ nav:
   - title: Data
     url: /data/
   - title: CV
-    url: /files/cv.pdf
+    url: /files/CV_Daniel_Kaufmann.pdf
     external: true          # direct PDF — opens in a new tab
   - title: Contact
     url: /#contact
