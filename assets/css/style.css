@@ -282,3 +282,15 @@ img { max-width: 100%; height: auto; }
 }
 .pub-news a { color: var(--ink-muted); }
 .pub-news a:hover { color: var(--link); }
+
+/* --- draft-phase banner (shown while _config.yml has noindex: true) ------ */
+.draft-banner {
+  margin: 0;
+  padding: 0.7rem 1.25rem;
+  background: #fff8e1;
+  border-bottom: 1px solid #f0e0a0;
+  color: #6b5a20;
+  font-size: 0.88rem;
+  text-align: center;
+}
+.draft-banner a { color: #6b5a20; }

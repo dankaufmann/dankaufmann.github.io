@@ -19,8 +19,14 @@ Built with Jekyll; GitHub Pages builds it natively on push to `main`.
 
 ## Draft phase
 
-`noindex: true` in `_config.yml` emits a `noindex, nofollow` meta tag on every
-page, and `robots.txt` disallows all crawlers. Both must be reverted at launch.
+A single flag, `noindex: true` in `_config.yml`, controls three things:
+
+1. a `noindex, nofollow` meta tag on every page,
+2. `robots.txt` disallowing all crawlers,
+3. the work-in-progress banner pointing visitors at dankaufmann.com.
+
+Setting it to `false` at launch removes all three at once. Nothing else needs
+to be remembered.
 
 ## Editing
 

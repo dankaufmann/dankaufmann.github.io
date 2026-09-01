@@ -1,4 +1,11 @@
-# DRAFT PHASE — site not yet public-facing.
-# Replaced at launch (Phase 4) with an allow-all policy + sitemap.
+---
+layout: null
+---
+{%- if site.noindex %}
+# Draft phase — site not yet public-facing.
 User-agent: *
 Disallow: /
+{%- else %}
+User-agent: *
+Allow: /
+{%- endif %}

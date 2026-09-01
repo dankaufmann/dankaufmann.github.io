@@ -13,6 +13,14 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  {%- if site.noindex %}
+  <p class="draft-banner" role="status">
+    This is a work-in-progress page. Visit
+    <a href="https://www.dankaufmann.com">www.dankaufmann.com</a>
+    for up to date information
+  </p>
+  {%- endif %}
+
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
       {%- for item in site.nav %}
