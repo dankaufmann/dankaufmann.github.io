@@ -35,10 +35,11 @@ forecasting
 ## Contact {#contact}
 
 <p class="address">
-Institute of Economic Research<br>
-University of Neuchâtel<br>
+Université de Neuchâtel<br>
+Institut de recherches économiques<br>
 Rue A.-L. Breguet 2<br>
-2000 Neuchâtel, Switzerland
+CH-2000 Neuchâtel, Switzerland<br>
+Office 1.232 · +41 (0)32 718 1351
 </p>
 
 <a href="mailto:{{ site.email }}">{{ site.email }}</a>
