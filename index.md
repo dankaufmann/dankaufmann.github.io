@@ -5,6 +5,8 @@ title: Home
 
 # Daniel Kaufmann
 
+## This is a work-in-progress page. Visit https://www.dankaufmann.com for up to date information
+
 <img class="portrait" src="{{ '/assets/img/portrait.jpg' | relative_url }}" alt="Daniel Kaufmann"> I hold the Chair of Applied Macroeconomics at the University of Neuchâtel, and
 am director of the MSc in Applied Economics, as well as Research Fellow at the
 KOF Swiss Economic Institute, ETH Zurich. Moreover, I am co-editor of the Swiss
