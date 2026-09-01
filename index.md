@@ -19,6 +19,8 @@ effects of monetary policy and the role of nominal rigidities.
 **Research interests:** macroeconomics · monetary economics · monetary history ·
 forecasting
 
+{% include profile-buttons.html %}
+
 ## News
 
 - <span class="date">8 July 2026</span>My paper with Marc Burri on multi-dimensional monetary policy shock identification has been published in [Economics Letters](https://doi.org/10.1016/j.econlet.2026.113091).
