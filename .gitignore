@@ -1,0 +1,11 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Editor / OS
+.DS_Store
+*~
+.Rhistory
+.Rproj.user/

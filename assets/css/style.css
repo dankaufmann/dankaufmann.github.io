@@ -1,0 +1,165 @@
+/* Daniel Kaufmann — minimal academic layout
+   Centered single column, black on white, content first. */
+
+:root {
+  --ink:        #1a1a1a;
+  --ink-muted:  #5c5c5c;
+  --rule:       #e2e2e2;
+  --link:       #14507d;
+  --link-hover: #0d3b5c;
+  --bg:         #ffffff;
+  --measure:    42rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- shared column ---------------------------------------------------- */
+.site-header,
+main,
+.site-footer {
+  max-width: var(--measure);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+/* --- header ----------------------------------------------------------- */
+.site-header {
+  padding-top: 2.75rem;
+  padding-bottom: 1rem;
+}
+
+.site-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-nav {
+  margin-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+}
+
+.site-nav a {
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover { color: var(--link); }
+
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* --- content ---------------------------------------------------------- */
+main { padding-block: 1.75rem 3rem; }
+
+h1, h2, h3 {
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-block: 2rem 0.6rem;
+}
+
+h1 { font-size: 1.65rem; margin-top: 0.5rem; }
+h2 { font-size: 1.2rem; }
+h3 { font-size: 1.02rem; }
+
+p, ul, ol { margin-block: 0 1rem; }
+ul, ol { padding-left: 1.25rem; }
+li { margin-bottom: 0.3rem; }
+
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin-block: 2rem; }
+
+/* portrait on the homepage */
+.portrait {
+  float: right;
+  width: 10.5rem;
+  margin: 0.3rem 0 1.25rem 1.5rem;
+  border-radius: 3px;
+}
+
+/* affiliation line under the name */
+.affiliation {
+  color: var(--ink-muted);
+  margin-top: -0.2rem;
+}
+
+/* news / dated list */
+.news { list-style: none; padding-left: 0; }
+.news li { margin-bottom: 0.75rem; }
+.news .date {
+  display: inline-block;
+  min-width: 4.2rem;
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* dataset entries on the Data page */
+.dataset {
+  padding-block: 1.1rem;
+  border-bottom: 1px solid var(--rule);
+}
+.dataset h3 { margin-top: 0; }
+.dataset .meta {
+  color: var(--ink-muted);
+  font-size: 0.88rem;
+}
+
+table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+th, td { text-align: left; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--rule); }
+
+img { max-width: 100%; height: auto; }
+
+/* wide things scroll rather than breaking the page */
+.scroll-x { overflow-x: auto; }
+
+/* --- footer ----------------------------------------------------------- */
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding-block: 1.25rem 3rem;
+  color: var(--ink-muted);
+  font-size: 0.88rem;
+}
+.site-footer a { color: var(--ink-muted); }
+
+/* --- a11y ------------------------------------------------------------- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 0.6rem;
+  background: var(--bg);
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--rule);
+  z-index: 10;
+}
+
+@media (max-width: 34rem) {
+  body { font-size: 16px; }
+  .site-header { padding-top: 1.75rem; }
+  .portrait { float: none; display: block; margin: 0 0 1.25rem 0; width: 8.5rem; }
+}

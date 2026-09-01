@@ -1,0 +1,43 @@
+# Site settings
+title: Daniel Kaufmann
+tagline: Chair of Applied Macroeconomics, University of Neuchâtel
+description: >-
+  Daniel Kaufmann holds the Chair of Applied Macroeconomics at the University
+  of Neuchâtel. Research on inflation, output, interest rate and exchange rate
+  dynamics over long historical episodes.
+url: "https://dankaufmann.github.io"
+baseurl: ""
+
+# --- DRAFT PHASE ---------------------------------------------------------
+# While true, every page emits <meta name="robots" content="noindex,nofollow">
+# and robots.txt disallows all crawlers. Set to false at launch (Phase 4).
+noindex: true
+# -------------------------------------------------------------------------
+
+# Contact / profiles
+email: daniel.kaufmann@unine.ch
+github: dankaufmann
+linkedin: https://ch.linkedin.com/in/daniel-kaufmann-9763039a
+bluesky: https://bsky.app/profile/kaufmanndani.bsky.social
+
+# Navigation (order shown in the header)
+nav:
+  - title: Home
+    url: /
+  - title: CV & Publications
+    url: /cv/
+  - title: Data
+    url: /data/
+  - title: Contact
+    url: /contact/
+
+# Build
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,4 @@
+# DRAFT PHASE — site not yet public-facing.
+# Replaced at launch (Phase 4) with an allow-all policy + sitemap.
+User-agent: *
+Disallow: /
