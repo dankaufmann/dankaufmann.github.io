@@ -5,16 +5,14 @@ permalink: /research/
 description: Published articles and working papers by Daniel Kaufmann.
 ---
 
-## Publications
+{: .note }
+*All entries below are placeholders. The real list is ported in Phase 2 —
+editing `_data/publications.yml` is all that is needed.*
 
-*To be ported from dankaufmann.com in Phase 2. This list will render from
-`_data/publications.yml` so that adding an entry means editing one data file
-rather than this page.*
+## Articles in journals
+
+{% for p in site.data.publications.articles %}{% include publication.html item=p %}{% endfor %}
 
 ## Working papers
 
-*To be ported.*
-
-## Work in progress
-
-*To be ported.*
+{% for p in site.data.publications.working_papers %}{% include publication.html item=p %}{% endfor %}

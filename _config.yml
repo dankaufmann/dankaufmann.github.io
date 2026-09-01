@@ -14,6 +14,9 @@ baseurl: ""
 noindex: true
 # -------------------------------------------------------------------------
 
+# Author name rendered in bold in publication lists
+me: D. Kaufmann
+
 # Contact / profiles
 email: daniel.kaufmann@unine.ch
 github: dankaufmann

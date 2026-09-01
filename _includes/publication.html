@@ -1,0 +1,52 @@
+{%- comment -%}
+Renders one publication entry from _data/publications.yml.
+Usage: {% include publication.html item=entry %}
+{%- endcomment -%}
+{%- assign p = include.item -%}
+<div class="pub">
+
+  <p class="pub-head">
+    <span class="pub-authors">
+      {%- for a in p.authors -%}
+        {%- if a == site.me -%}<strong>{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
+        {%- unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless -%}
+      {%- endfor -%}
+      {%- if p.year %} ({{ p.year }}){% endif -%}
+    </span>
+  </p>
+
+  <p class="pub-title">
+    {%- if p.links.paper -%}
+      <a href="{{ p.links.paper }}">{{ p.title }}</a>
+    {%- else -%}
+      {{ p.title }}
+    {%- endif -%}
+  </p>
+
+  {%- if p.journal or p.doi %}
+  <p class="pub-meta">
+    {%- if p.journal %}<em>{{ p.journal }}</em>{% endif -%}
+    {%- if p.volume %}, {{ p.volume }}{% endif -%}
+    {%- if p.pages %}, {{ p.pages }}{% endif -%}
+    {%- if p.journal %}.{% endif -%}
+    {%- if p.doi %} <a class="pub-doi" href="https://doi.org/{{ p.doi }}">doi:{{ p.doi }}</a>{% endif -%}
+  </p>
+  {%- endif %}
+
+  {%- if p.links %}
+  <p class="pub-buttons">
+    {%- if p.links.paper %}<a class="btn" href="{{ p.links.paper }}">Paper</a>{% endif -%}
+    {%- if p.links.wp %}<a class="btn" href="{{ p.links.wp | relative_url }}">Working paper</a>{% endif -%}
+    {%- if p.links.code %}<a class="btn" href="{{ p.links.code }}">Code</a>{% endif -%}
+    {%- if p.links.data %}<a class="btn" href="{{ p.links.data | relative_url }}">Data</a>{% endif -%}
+  </p>
+  {%- endif %}
+
+  {%- if p.abstract %}
+  <details class="abstract">
+    <summary>Abstract</summary>
+    <p>{{ p.abstract }}</p>
+  </details>
+  {%- endif %}
+
+</div>
