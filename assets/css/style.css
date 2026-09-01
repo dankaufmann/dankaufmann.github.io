@@ -306,3 +306,18 @@ img { max-width: 100%; height: auto; }
   margin-top: 1.1rem !important;
   margin-bottom: 1.5rem;
 }
+
+/* in-page section jump links */
+.section-nav {
+  margin-top: 0.2rem !important;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* anchored headings should not sit flush against the viewport top */
+h2[id] { scroll-margin-top: 1.25rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
