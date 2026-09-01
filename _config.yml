@@ -24,12 +24,15 @@ bluesky: https://bsky.app/profile/kaufmanndani.bsky.social
 nav:
   - title: Home
     url: /
-  - title: CV & Publications
-    url: /cv/
+  - title: Research
+    url: /research/
   - title: Data
     url: /data/
+  - title: CV
+    url: /files/cv.pdf
+    external: true          # direct PDF — opens in a new tab
   - title: Contact
-    url: /contact/
+    url: /#contact
 
 # Build
 markdown: kramdown
@@ -39,5 +42,6 @@ permalink: pretty
 
 exclude:
   - README.md
+  - _archive
   - Gemfile
   - Gemfile.lock

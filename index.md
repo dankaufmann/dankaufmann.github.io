@@ -30,3 +30,14 @@ forecasting
   <li><span class="date">2023</span> Appointed full professor.</li>
   <li><span class="date">2022</span> Journal article and best paper award.</li>
 </ul>
+
+## Contact {#contact}
+
+<p class="address">
+Institute of Economic Research<br>
+University of Neuchâtel<br>
+Rue A.-L. Breguet 2<br>
+2000 Neuchâtel, Switzerland
+</p>
+
+<a href="mailto:{{ site.email }}">{{ site.email }}</a>

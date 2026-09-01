@@ -13,8 +13,9 @@ Built with Jekyll; GitHub Pages builds it natively on push to `main`.
 | `_layouts/` | Page templates |
 | `assets/css/` | Stylesheet |
 | `assets/img/` | Images (portrait, charts) |
-| `files/` | Downloadables — CV, dataset CSVs |
-| `*.md` | Page content |
+| `files/` | Downloadables — `cv.pdf` (linked directly from the nav), dataset CSVs |
+| `_archive/` | Retired pages, excluded from the build |
+| `*.md` | Page content — `index.md` (bio, news, contact), `research.md`, `data.md` |
 
 ## Draft phase
 

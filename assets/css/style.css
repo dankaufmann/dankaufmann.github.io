@@ -163,3 +163,9 @@ img { max-width: 100%; height: auto; }
   .site-header { padding-top: 1.75rem; }
   .portrait { float: none; display: block; margin: 0 0 1.25rem 0; width: 8.5rem; }
 }
+
+/* postal address block */
+.address {
+  color: var(--ink-muted);
+  margin-bottom: 0.6rem;
+}
