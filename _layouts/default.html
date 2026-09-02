@@ -10,7 +10,7 @@
   <meta name="description" content="{{ page.description | default: site.description | strip_newlines }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body>
+<body class="page-{{ page.title | default: 'home' | slugify }}">
   <a class="skip-link" href="#main">Skip to content</a>
 
   {%- if site.noindex %}
