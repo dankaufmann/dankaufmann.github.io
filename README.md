@@ -1,7 +1,7 @@
 # dankaufmann.github.io
 
 Source for the personal academic website of Daniel Kaufmann,
-migrated from dankaufmann.com (previously hosted on Wix).
+migrated from dankaufmann.com.
 
 Built with Jekyll; GitHub Pages builds it natively on push to `main`.
 
@@ -13,7 +13,7 @@ Built with Jekyll; GitHub Pages builds it natively on push to `main`.
 | `_layouts/` | Page templates |
 | `assets/css/` | Stylesheet |
 | `assets/img/` | Images (portrait, charts) |
-| `files/` | Downloadables — `cv.pdf` (linked directly from the nav), dataset CSVs |
+| `files/` | Downloadables — `CV_DanielKaufmann.pdf` (linked directly from the nav), dataset CSVs |
 | `_archive/` | Retired pages, excluded from the build |
 | `*.md` | Page content — `index.md` (bio, news, contact), `research.md`, `data.md` |
 
