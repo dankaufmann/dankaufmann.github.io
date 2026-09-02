@@ -20,6 +20,8 @@ forecasting
 
 ## News
 
+- <span class="date">3 September 2026</span>I am happy to share that my new website is live!
+- <span class="date">1 August 2026</span>For the next two years, I will serve as vice-dean of the Faculty of Economics and Business. The director of the master's program will be [Gabriel Loumeau](https://sites.google.com/view/gabrielloumeau/){:target="_blank" rel="noopener"}. I wish him all the best in this new role ([announcement](https://www.linkedin.com/posts/facult%C3%A9-des-sciences-%C3%A9conomiques-universit%C3%A9-de-neuch%C3%A2tel_unine-teamunine-unineabrseco-activity-7497551367364894720-efzC/){:target="_blank" rel="noopener"}).
 - <span class="date">8 July 2026</span>My paper with Marc Burri on multi-dimensional monetary policy shock identification has been published in [Economics Letters](https://doi.org/10.1016/j.econlet.2026.113091){:target="_blank" rel="noopener"}.
 - <span class="date">29 June 2026</span>My paper with Rebecca Stuart on money market integration in 19th century Switzerland has been published in the [Economic History Review](https://doi.org/10.1111/ehr.70131){:target="_blank" rel="noopener"}!
 {: .news}
