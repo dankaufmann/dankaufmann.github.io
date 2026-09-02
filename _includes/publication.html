@@ -15,6 +15,8 @@ Usage: {% include publication.html item=entry %}
     <span class="pub-title">
       {%- if p.links.paper -%}
         <a href="{{ p.links.paper }}" target="_blank" rel="noopener">{{ p.title }}</a>
+      {%- elsif p.links.report -%}
+        <a href="{{ p.links.report }}" target="_blank" rel="noopener">{{ p.title }}</a>
       {%- elsif p.links.wp -%}
         <a href="{{ p.links.wp }}" target="_blank" rel="noopener">{{ p.title }}</a>
       {%- else -%}
@@ -24,9 +26,7 @@ Usage: {% include publication.html item=entry %}
     {%- assign tlast = p.title | slice: -1 -%}
     {%- unless tlast == "?" or tlast == "!" %}.{% endunless %}
     {% for a in p.authors -%}
-      {%- if a.name == site.me -%}
-        <strong>{{ a.name }}</strong>
-      {%- elsif a.url -%}
+      {%- if a.url -%}
         <a href="{{ a.url }}" target="_blank" rel="noopener">{{ a.name }}</a>
       {%- else -%}
         {{ a.name }}

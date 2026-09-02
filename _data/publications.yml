@@ -3,8 +3,10 @@
 #
 # Author order verified against Crossref (by DOI) and RePEc. The old Wix page
 # used a "with X" convention that did not record author order; every entry
-# below is the real published order. Daniel's name is rendered bold
-# automatically via `me:` in _config.yml — it must match exactly.
+# below is the real published order. Author names all render the same way —
+# Daniel's is no longer bolded, since whose publication list this is is
+# self-evident. `me:` in _config.yml is now unused, kept only in case that
+# is reversed.
 #
 # Fixed button labels, in render order:
 #   paper | wp | update | appendix | code | data
@@ -285,7 +287,7 @@ other:
     abstract: >
       This report documents the use and misuse of generative artificial intelligence in academic economic research and provides guidelines for university students and instructors. It primarily addresses students and instructors in a master's program in economics; however, the use cases and guidelines may be useful in other fields and academic research in general.
     links:
-      paper: "https://ideas.repec.org/p/irn/polrep/24-03.html"
+      report: "https://ideas.repec.org/p/irn/polrep/24-03.html"
 
   - title: "Study to evaluate the future data compilation for the Swiss Consumer Sentiment Index"
     # Author order per the report's own recommended citation (p. 1 of the PDF):
@@ -303,7 +305,7 @@ other:
     abstract: >
       This evaluation, conducted by FORS in collaboration with IRENE, examined possible design features for the future compilation of the Swiss Consumer Sentiment Index. The way consumer sentiment is calculated in Switzerland is well in line with similar measures elsewhere, but Switzerland is the only country under review collecting data only quarterly, which severely limits the information available for business cycle monitoring. Assuming at least a monthly index is to be calculated, the report recommends a weekly rolling cross-section design with 500 weekly target interviews, a single-mode web-only survey with offline recruitment, and model-based retropolation to extend the monthly indicator back in time.
     links:
-      paper: "https://www.seco.admin.ch/dam/de/sd-web/RPOVmimua2zJ/2024-02-wp-43-Future-Data-Compilation-Swiss-Consumer-Sentiment-Index-SECO.pdf"
+      report: "https://www.seco.admin.ch/dam/de/sd-web/RPOVmimua2zJ/2024-02-wp-43-Future-Data-Compilation-Swiss-Consumer-Sentiment-Index-SECO.pdf"
 
   - title: "Do bonuses offset the allocative effects of downward rigid base wages?"
     authors:
@@ -327,7 +329,7 @@ other:
     abstract: >
       I simulate the distribution of SNB profits to the Confederation and Cantons under a hypothetical scenario, in which the new agreement between the Swiss National Bank and the Federal Department of Finance would have been in place from 2005-2019. All else equal, the new agreement leads to: (i) a higher average profit distribution; (ii) larger annual fluctuations of profit distributions, complicating fiscal authorities' budget planning; (iii) pro-cyclical profit distributions (lower [higher] during economic recessions [booms]). Having said that, the SNB's profit distributions account for a relatively modest share of total government expenditures. In addition, to offset the volatile and pro-cyclical profit distributions, fiscal authorities may borrow on capital markets.
     links:
-      paper: "https://ideas.repec.org/p/irn/polrep/21-01.html"
+      report: "https://ideas.repec.org/p/irn/polrep/21-01.html"
 
   - title: "Wie weiter mit der Tiefzinspolitik? Szenarien und Alternativen"
     authors:
@@ -337,7 +339,7 @@ other:
     abstract: >
       Diese Studie zeigt wie sich ein vorzeitiger Ausstieg aus der Tiefzinspolitik auf den Wechselkurs und die schweizerische Wirtschaft auswirken würde. Ein überraschender Ausstieg aus der Tiefzinspolitik würde den Schweizer Franken um 3-7% aufwerten. Zudem würde dies zu einem Rückgang der Wirtschaftsaktivität und der Konsumentenpreise führen. Es gibt jedoch alternative geldpolitische Strategien, die den Franken schwächen und die Nominalzinsen erhöhen. Dies würde eine höhere Inflationsrate erfordern.
     links:
-      paper: "https://ideas.repec.org/p/irn/polrep/20-01.html"
+      report: "https://ideas.repec.org/p/irn/polrep/20-01.html"
       code: "https://github.com/dankaufmann/lir"
     news:
       - {label: "Le Temps", url: "https://www.letemps.ch/economie/finance/daniel-kaufmann-fin-taux-negatifs-rencherirait-franc-3-7"}
