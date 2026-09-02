@@ -22,12 +22,9 @@ articles:
     pages: "113091"
     doi: "10.1016/j.econlet.2026.113091"
     abstract: >
-      We identify the causal effects of target and path shocks using IVs
-      exploiting the change in the variance-covariance matrix of financial
-      market variables on days with monetary policy announcements.
+      We extend the heteroskedasticity IV estimator of Rigobon and Sack (2004) to multiple monetary policy shocks by imposing recursive zero restrictions on the impact matrix. Unlike high-frequency identification, the approach requires neither intraday tick data nor precise announcement timestamps, making it applicable to countries and historical periods where such data are unavailable. Applied to US FOMC announcements, we find causal effects similar to those of high-frequency identification. The heteroskedasticity-based instrument passes weak-instrument tests for the target shock, whereas results are mixed for high-frequency surprises. For the path shock, we obtain strong instruments for the majority of specifications and the underlying shock series is highly correlated with the high-frequency counterpart.
     links:
       paper: "https://doi.org/10.1016/j.econlet.2026.113091"
-      wp: "https://ideas.repec.org/p/irn/wpaper/26-06.html"
       code: "https://github.com/dankaufmann/hetiv"
 
   - title: "Private money and money market integration: The role of payments infrastructure in 19th century Switzerland, 1846–1893"
@@ -39,15 +36,9 @@ articles:
     pages: "1–22"
     doi: "10.1111/ehr.70131"
     abstract: >
-      We show that discount rate dispersion, a measure of financial market
-      segmentation, was relatively high under a period of unregulated free
-      banking. Only with the Banknote Act of 1881 did discount rate dispersion
-      fall to similar levels as in other countries. Therefore, we argue that
-      bank regulation was a key factor driving money market integration in
-      Switzerland.
+      Using newly collected discount rate data for six Swiss cities from 1846 to 1893, we find no evidence of increasing integration during a 30-year period of lightly regulated free banking. We attribute this to two structural issues: banks had incentives to ward off competitors by protecting their local monopolies or forming cartels, and there was always a risk (which varied across banks) that banknotes were not accepted or converted at par. We use a novel counterfactual to show that these issues increased discount rate dispersion, and argue that as a result, public regulation of payments infrastructure was necessary for money market integration.
     links:
       paper: "https://doi.org/10.1111/ehr.70131"
-      wp: "https://ideas.repec.org/p/irn/wpaper/24-05.html"
       data: "/files/DiscountRateData_Public.xlsx"
 
   - title: "Overnight rate and signalling effects of central bank bills"
@@ -60,14 +51,9 @@ articles:
     doi: "10.1016/j.euroecorev.2022.104060"
     note: "A previous version was titled 'Shocking interest rate floors'."
     abstract: >
-      We identify the causal effect of surprise changes in an interest rate
-      floor exploiting regular auctions of SNB Bills (Swiss central bank debt
-      securities). We find that a restrictive interest rate floor shock causes
-      a higher money market rate, an appreciation of the Swiss franc, and a
-      decline in stock prices.
+      We analyse the impact of interest-bearing central bank bills on financial market variables in Switzerland. The unique institutional setting allows us to identify the causal effects of two orthogonal shocks occurring on days with central bank bill auctions through heteroscedasticity: an overnight interest rate shock and a signalling shock. The first shock raises the overnight interest rate and modestly appreciates the exchange rate. The signalling shock appreciates the exchange rate more strongly. In addition, it lowers stock prices, long-term interest rates, as well as inflation expectations, and it raises corporate bond spreads. The signalling shock is economically more important for forward-looking variables than the overnight rate shock. The results suggest that liquidity-absorbing operations between official monetary policy decisions affect financial market variables by revealing information about the central bank’s future policy actions.
     links:
       paper: "https://doi.org/10.1016/j.euroecorev.2022.104060"
-      wp: "https://ideas.repec.org/p/irn/wpaper/19-02.html"
       appendix: "https://drive.switch.ch/index.php/s/ZMSc9RhKizOKQhU"
       code: "https://drive.switch.ch/index.php/s/YCvU1ahOXuHulMD"
     news:
@@ -83,14 +69,9 @@ articles:
     pages: "689–712"
     doi: "10.1111/ecca.12412"
     abstract: >
-      We examine the role of wage rigidities after the Swiss National Bank
-      removed an exchange rate floor leading to a 1% decline in the price
-      level. We find that sticky wages caused a 0.3% decline in income, 0.9%
-      decline in employment income, and a 0.05 percentage point increase in
-      the unemployment rate.
+      We study the causal effects of downward nominal wage rigidity after a deflationary monetary policy shock using Swiss data on employee-level contractual wages matched with income and employment from social security register data. We exploit the discontinuity around the origin of the wage growth distribution to compare the outcomes of individuals with wage freezes (treatment group) and small wage cuts (control group) before and after an unexpected decision by the Swiss National Bank leading to a 1% decline of the price level. Locally (that is, near the origin of the wage growth distribution), downward nominal wage rigidities cause a 4.4% decline in income and a 0.7 percentage point increase in the probability of unemployment. In the aggregate, income declines by 0.3% and the probability of unemployment increases by 0.05 percentage points.
     links:
       paper: "https://doi.org/10.1111/ecca.12412"
-      wp: "https://ideas.repec.org/p/irn/wpaper/20-06.html"
       appendix: "https://drive.switch.ch/index.php/s/kPvvEukfN0ZLjmb"
     news:
       - {label: "Tages-Anzeiger", url: "https://blog.tagesanzeiger.ch/nevermindthemarkets/index.php/46157/mehr-lohn-trotz-krise/"}
@@ -103,9 +84,10 @@ articles:
     journal: "Swiss Journal of Economics and Statistics"
     volume: "156(6)"
     doi: "10.1186/s41937-020-00051-z"
+    abstract: >
+      Because macroeconomic data is published with a substantial delay, assessing the health of the economy during the rapidly evolving COVID-19 crisis is challenging. We develop a fever curve for the Swiss economy using publicly available daily financial market and news data. The indicator can be computed with a delay of 1 day. Moreover, it is highly correlated with macroeconomic data and survey indicators of Swiss economic activity. Therefore, it provides timely and reliable warning signals if the health of the economy takes a turn for the worse.
     links:
       paper: "https://sjes.springeropen.com/articles/10.1186/s41937-020-00051-z"
-      wp: "https://ideas.repec.org/p/irn/wpaper/20-05.html"
       appendix: "/files/FeverCurve_Appendix.pdf"
       code: "https://github.com/dankaufmann/f-curve"
     news:
@@ -124,14 +106,9 @@ articles:
     pages: "614–628"
     doi: "10.1002/jae.2762"
     abstract: >
-      I propose a GMM estimator to estimate the relationship between deflation
-      and real activity in the US controlling for measurement error in 19th
-      century price data. I find a relevant short-fall in real activity when
-      prices were falling.
+      I estimate average economic activity during periods of inflation and deflation while accounting for measurement errors in 19th century prices. These measurement errors lead to underestimation (overestimation) of economic activity during periods of inflation (deflation). By exploiting multiple deflation indicators, it is possible to recover the true relationship; the shortfall of US industrial production growth during periods of deflation ranges from −4.5 pp to −7.6 pp, instead of −2 pp. I also find a negative relationship between deflation and real activity in the UK. I then examine the cross-country variation in the estimates for eleven countries. The patterns are consistent with stronger biases for countries with more serious measurement errors in prices.
     links:
       paper: "https://doi.org/10.1002/jae.2762"
-      wp: "http://dx.doi.org//10.3929/ethz-a-010786535"
-      update: "/files/Deflation_Costly_Update.pdf"
       code: "https://github.com/dankaufmann/historical_inflation"
 
   - title: "Trend fundamentals and exchange rate dynamics"
@@ -143,14 +120,9 @@ articles:
     volume: "87"
     doi: "10.1111/ecca.12334"
     abstract: >
-      We propose a multivariate unobserved-components stochastic volatility
-      model to explain exchange rate dynamics. We find that changes in trend
-      inflation is a relevant factor explaining the persistence of exchange
-      rate fluctuations.
+      We estimate a multivariate unobserved components stochastic volatility model to explain the dynamics of a panel of six exchange rates against the US dollar. The empirical model is based on the assumption that two countries’ monetary policy strategies may be well described by Taylor rules with a time-varying inflation target, a time-varying natural rate of unemployment, and interest rate smoothing. Compared to the existing literature, our model simultaneously provides estimates of the latent components included in a typical Taylor rule specification and the model-based real exchange rate. Our estimates closely track major movements along with important time series properties of real and nominal exchange rates across all currencies considered, outperforming a benchmark model that does not account for changes in trend inflation and trend unemployment. More precisely, the proposed approach improves on competing models in tracking the actual evolution of the real exchange rate in terms of simple correlations while it appreciably improves on simpler competitors in terms of matching the persistence of the real exchange rate.
     links:
       paper: "https://doi.org/10.1111/ecca.12334"
-      wp: "http://dx.doi.org//10.3929/ethz-a-010513063"
-      update: "/files/TrendFundamentals_Update.pdf"
 
   - title: "Constrained interest rates and changing dynamics at the zero lower bound"
     authors:
@@ -164,10 +136,7 @@ articles:
     doi: "10.1515/snde-2017-0098"
     award: "Best paper award, SNDE 2020"
     abstract: >
-      We propose a VAR with endogenous regime-switching to measure the impact
-      of risk premium shocks with binding and non-binding effective lower bound
-      in Switzerland. The effective lower bound leads to more persistent
-      declines in the price level and a more persistent appreciation.
+      The interaction of macroeconomic variables may change as nominal short-term interest rates approach zero. In this paper, we propose to capture these changing dynamics with a state-switching parameter model which explicitly takes into account that the interest rate might be constrained near the zero lower bound by using a Tobit model. The probability of state transitions is affected by the lagged level of the interest rate. The endogenous specification of the state indicator permits dynamic conditional forecasts of the state and the system variables. We use Bayesian methods to estimate the model and to derive the forecast densities. In an application to Swiss data, we evaluate state-dependent impulse-responses to a risk premium shock identified with sign-restrictions. We provide an estimate of the latent rate, i.e. the rate lower than the constraint on the interest rate level which would be state- and model-consistent. Additionally, we discuss scenario-based forecasts and evaluate the probability of exiting the ZLB region. In terms of log predictive scores and the Bayesian information criterion, the model outperforms a model substituting switching with stochastic volatility and another including intercept switching only combined with stochastic volatility.
     links:
       paper: "https://doi.org/10.1515/snde-2017-0098"
       wp: "http://www.szgerzensee.ch/fileadmin/Dateien_Anwender/Dokumente/working_papers/wp-1602.pdf"
@@ -181,13 +150,9 @@ articles:
     pages: "1–23"
     doi: "10.1186/s41937-019-0033-7"
     abstract: >
-      I estimate nominal trends for Switzerland from 1800–2017 using an
-      unobserved-components stochastic-volatility model. Today's monetary
-      regime, flexible inflation targeting, is the most stable monetary regime.
+     I assess the stability of the monetary environment in Switzerland over the past two centuries. In order to control for transitory measurement errors, in particular in nineteenth century data, I use an unobserved-components stochastic-volatility model to extract the permanent trends from several nominal variables. The descriptive analysis of these trends suggests that the current monetary regime, flexible inflation targeting, provided a relatively stable monetary environment. Although the trends are quite stable for the nineteenth century, the estimates are imprecise. We should therefore be cautious when characterizing metal currency regimes as providing a stable monetary environment. A discussion of the results shows that the apparent success of flexible inflation targeting poses new challenges for the implementation of monetary policy because the trend decline in inflation was associated with a trend decline in nominal interest rates.
     links:
       paper: "https://sjes.springeropen.com/articles/10.1186/s41937-019-0033-7"
-      wp: "http://dx.doi.org//10.3929/ethz-a-010416200"
-      update: "/files/NominalStability_Update.pdf"
       code: "https://drive.switch.ch/index.php/s/AUto4oc7PQJxZ72"
 
   - title: "Measuring exchange rate, price, and output dynamics at the effective lower bound"
@@ -200,10 +165,7 @@ articles:
     pages: "1243–1266"
     doi: "10.1111/obes.12260"
     abstract: >
-      We propose a VAR with exogenous regime-switching to measure the impact of
-      risk premium shocks with binding and non-binding effective lower bound in
-      Switzerland. The effective lower bound leads to more persistent declines
-      in the price level and a more persistent appreciation.
+      New Keynesian models with sticky prices make stark predictions about how the economy responds to shocks under different monetary policy regimes when short-term interest rates are constrained by an effective lower bound. We use the Swiss case as a laboratory to find evidence in favour of these predictions. We propose a Bayesian VAR to estimate impulse responses to risk shocks for short periods with a binding effective lower bound and with a publicly announced minimum exchange rate. In line with predictions from theory, we find that with a binding effective lower bound, the responses of the exchange rate, prices, and output become more persistent. However, the minimum exchange rate attenuates this adverse impact.
     links:
       paper: "https://onlinelibrary.wiley.com/doi/epdf/10.1111/obes.12260"
       wp: "https://ideas.repec.org/p/snb/snbwpa/2014-10.html"
@@ -222,10 +184,7 @@ articles:
     pages: "878–893"
     doi: "10.1016/j.ijforecast.2017.04.005"
     abstract: >
-      We use a mixed-frequency factor model to examine the forecasting
-      performance of Swiss business tendency survey data. Business tendency
-      surveys provide additional information for forecasting inflation,
-      employment growth, and the output gap.
+      This paper investigates the information content of a large sectoral mixed-frequency business tendency survey for Switzerland relative to competing early available monthly information. Using a factor-augmented regression framework, we find that a broad set of dimensions of the survey provides additional information for explaining CPI inflation, employment growth and the output gap. However, the survey contains no additional information for GDP growth. A pseudo out-of-sample forecasting exercise suggests that the survey information is particularly useful for forecasting the medium-term CPI inflation.
     links:
       paper: "http://www.sciencedirect.com/science/article/pii/S0169207017300547"
       wp: "http://dx.doi.org//10.3929/ethz-a-010416189"
@@ -241,10 +200,7 @@ articles:
     pages: "384–394"
     doi: "10.1016/j.euroecorev.2013.10.001"
     abstract: >
-      We use a factor model to document stylized facts for Swiss sectoral
-      dynamics and confront these facts with two popular price-setting models.
-      Overall, the findings tend to support multi-sector models with sticky
-      prices rather than rational inattention.
+      This paper derives stylised facts on sectoral inflation dynamics and confronts these facts with two popular theoretical models of price setting. Based on sectoral price responses to macroeconomic shocks estimated from an approximate factor model, we find that the frequency of price changes explains a relevant share of the cross-sectional variation of the speed and size of responses. Moreover, there is little evidence that the volatility of sectoral inflation due to idiosyncratic shocks dampens the size and speed of the responses to macroeconomic shocks. These findings support a multi-sector model with sticky prices rather than a rational-inattention model. We derive the results from different modelling and sampling decisions proposed in the literature, and we find that the explanatory power of the frequency of price changes for the speed of response to a macroeconomic shock proves robust in the face of these decisions. Other results are sensitive with respect to the choice of the factor model and the treatment of outliers..
     links:
       paper: "http://www.sciencedirect.com/science/article/pii/S0014292113001281"
 
@@ -256,10 +212,7 @@ articles:
     journal: "Swiss National Bank Economic Study"
     volume: "No. 7"
     abstract: >
-      We evaluate the SNB's short-term forecasting model based on sectoral
-      inflation rates and propose a state-space model to deal with changes in
-      the survey frequency over time. The model performs well relative to
-      various benchmarks, in particular, over short-term horizons.
+      This study documents the SNB's ARIMA model based on disaggregated CPI data used to produce inflation forecasts over the short-term horizon, and evaluates its forecasting performance. Our findings suggest that the disaggregate ARIMA model for the Swiss CPI performed better than relevant benchmarks. In particular, estimating ARIMA models for individual CPI expenditure items and aggregating the forecasts from these models gives better results than directly applying the ARIMA methodto the total CPI. We then extend the model to factor in changes in the collection frequency of the Swiss CPI data and show that this extension further improves the forecasting performance.
     links:
       paper: "http://ideas.repec.org/p/snb/snbecs/2013-07.html"
 
@@ -274,12 +227,9 @@ articles:
     pages: "211–236"
     doi: "10.1111/j.1538-4616.2012.00558.x"
     abstract: >
-      We propose an econometric framework to estimate reduced-form
-      (S,s)-pricing rules from firm-level price data. Applying the estimator to
-      Swiss data, we find that the prevalence of positive relative to negative
-      price changes is largely due to a positive aggregate inflation trend.
+      In this paper, we follow the recent empirical literature that has specified reduced-form models for price setting that are closely tied to (S, s)-pricing rules. Our contribution to the literature is twofold. First, we propose an estimator that relaxes distributional assumptions on the unobserved heterogeneity. Second, we use the estimator to examine the prevalence of positive price changes in a low-inflation environment. Our model estimates suggest that, if inflation falls from 0.9% to zero, the share of positive price changes in all price changes falls from 63.6% to 56.2%.
     links:
-      paper: "http://ideas.repec.org/a/mcb/jmoncb/v44y2012ip211-236.html"
+      paper: "https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4616.2012.00558.x"
       wp: "http://www.snb.ch/n/mmr/reference/working_paper_2012_09/source/working_paper_2012_09.en.pdf"
     news:
       - {label: "Jackson Hole speech, T. Jordan", url: "https://www.snb.ch/en/mmr/speeches/id/ref_20150828_tjn/source/ref_20150828_tjn.en.pdf"}
@@ -294,11 +244,9 @@ articles:
     pages: "57–75"
     doi: "10.1007/bf03399360"
     abstract: >
-      We use a factor model and Swiss sectoral price data to examine whether
-      there is a price puzzle, i.e. an increase in the price level after a
-      restrictive monetary policy shock.
+      This paper estimates the response of consumer prices to a monetary policy shock in Switzerland. We find that there is no evidence of a price puzzle at the aggregate level. This is because our factor-augmented vector autoregression (FAVAR) avoids misspecification by including more information than a traditional VAR. However, the response is still delayed by at least four quarters, partly because there is a price puzzle in some sectors. In particular, rents tend to rise after a monetary policy tightening because there are legal provisions in Switzerland which link them to interest rates. But durable goods prices also rise, which is consistent with the existence of a cost channel of monetary policy.
     links:
-      paper: "http://www.sjes.ch/papers/2012-I-3.pdf"
+      paper: "https://doi.org/10.1007/BF03399360"
 
   - title: "Price-setting behaviour in Switzerland: Evidence from CPI micro data"
     authors:
@@ -308,8 +256,10 @@ articles:
     volume: "145(III)"
     pages: "293–349"
     doi: "10.1007/bf03399283"
+    abstract: >
+      This paper investigates price-setting behaviour of firms based on the individual price quotes underlying the Swiss consumer price index. The data set covers the years from 1993 to 2005. Six main findings emerge from the analysis. (i) Prices are sticky; the median duration amounts to 4.6 quarters. (ii) Price-setting behaviour is heterogeneous across sectors and outlet characteristics. (iii) Price changes are sizeable; the median absolute size amounts to 9.4%. (iv) There is little evidence of downward price stickiness; almost half of all price changes are decreases. An exception is the service sector, however, where there is evidence of asymmetries in price-setting due to downward rigid wages. (v) Firms respond to expected cost shocks at the date of their occurrence; VAT rate changes do not lead to more price adjustments before they take effect. (vi) There is some evidence that firms adjust their behaviour according to the state of the economy; in particular, firms facing higher rates of inflation adjust prices more frequently.
     links:
-      paper: "http://ideas.repec.org/a/ses/arsjes/2009-iii-3.html"
+      paper: "https://doi.org/10.1007/BF03399283"
       wp: "https://ideas.repec.org/p/snb/snbwpa/2008-15.html"
 
 other:
@@ -351,11 +301,7 @@ other:
     pages: "486–490"
     doi: "10.1257/pandp.20221097"
     abstract: >
-      We examine whether downward flexible wage components, such as bonuses,
-      are used as a margin of adjustment to circumvent base wage rigidities.
-      Those components indeed mitigate the allocative effects of downward
-      nominal wage rigidity. At least in Switzerland, they do not suffice to
-      completely offset the allocative effects of downward rigid base wages.
+      We measure the labor market outcomes of employees with downward rigid base wages after an unexpected deflationary shock in Switzerland using a firm survey matched with Social Security register data. The employees that additionally receive downward flexible compensation, such as bonuses, are less likely to lose their job after a deflationary shock than those only receiving a base wage. Only a modest share of employees receives downward flexible compensation, however. Therefore, these compensation schemes do not offset the overall allocative effects of downward rigid base wages. 
     links:
       paper: "https://doi.org/10.1257/pandp.20221097"
 

@@ -14,11 +14,13 @@ description: Datasets constructed by Daniel Kaufmann, and links to data maintain
 
 ## My data {#my-data}
 
-Datasets constructed in the course of various research projects.
+Here you can find data constructed in the course of my research projects.
 
 {% for d in site.data.datasets %}{% include dataset.html item=d %}{% endfor %}
 
 ## Data by other researchers {#other-data}
+
+I also assembled a variety of free data sources by other researchers and institutions that I found helpful in my research and policy work.
 
 ### Historical data {#historical-data}
 
