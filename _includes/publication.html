@@ -50,6 +50,7 @@ Usage: {% include publication.html item=entry %}
   <p class="pub-buttons">
     {%- if p.links.paper %}<a class="btn" href="{{ p.links.paper }}" target="_blank" rel="noopener">Paper</a>{% endif -%}
     {%- if p.links.wp %}<a class="btn" href="{{ p.links.wp }}" target="_blank" rel="noopener">Working paper</a>{% endif -%}
+    {%- if p.links.report %}<a class="btn" href="{{ p.links.report }}" target="_blank" rel="noopener">Report</a>{% endif -%}
     {%- if p.links.update %}<a class="btn" href="{{ p.links.update }}" target="_blank" rel="noopener">Update</a>{% endif -%}
     {%- if p.links.appendix %}<a class="btn" href="{{ p.links.appendix }}" target="_blank" rel="noopener">Appendix</a>{% endif -%}
     {%- if p.links.code %}<a class="btn" href="{{ p.links.code }}" target="_blank" rel="noopener">Code</a>{% endif -%}

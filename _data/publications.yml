@@ -342,6 +342,27 @@ other:
     news:
       - {label: "Le Temps", url: "https://www.letemps.ch/economie/finance/daniel-kaufmann-fin-taux-negatifs-rencherirait-franc-3-7"}
 
+  - title: "Manufacturing prices and employment after the Swiss franc shock"
+    # Metadata from the report itself: KOF Studies No. 107, April 2018, and the
+    # ETH Research Collection record. The recommended citation printed inside the
+    # PDF says 2017; the cover and the ETH record both say April 2018.
+    authors:
+      - {name: "Daniel Kaufmann"}
+      - {name: "Tobias Renkin", url: "https://www.tobiasrenkin.com/"}
+    year: 2018
+    journal: "KOF Studies 107, KOF Swiss Economic Institute, ETH Zurich"
+    doi: "10.3929/ethz-b-000262881"
+    note: "Study on behalf of the State Secretariat for Economic Affairs SECO, Strukturberichterstattung 56/4."
+    abstract: >
+      What is the impact of a permanent nominal appreciation on manufacturing prices and employment? To answer this question this study exploits the unexpected 10% appreciation in the aftermath of the removal of the Swiss National Bank's exchange rate floor in January 2015. Prices of products sold by domestic firms, as well as export prices set in domestic currency, declined only slightly. By contrast, export prices denominated in euro and prices of imported products changed more quickly and more strongly (measured in Swiss francs). We show that sticky prices in the corresponding currency of pricing are one reason for this pattern, supporting modeling assumptions in the New Keynesian tradition. These missing price adjustments therefore can be responsible why nominal exchange rate fluctuations affect the real economy. In line with this idea, we find that manufacturing employment has declined significantly after the appreciation. Relative to a control group of similar Austrian firms, employment in an average Swiss manufacturing firm declined by 4% two years after the appreciation.
+    links:
+      report: "https://www.research-collection.ethz.ch/entities/publication/05182ece-d698-4664-86f3-ea8868cf7a36"
+    news:
+      - {label: "NZZ", url: "https://www.nzz.ch/wirtschaft/was-der-franken-schock-gekostet-hat-ld.1323901"}
+      - {label: "Tages-Anzeiger", url: "https://www.tagesanzeiger.ch/wirtschaft/standardwas-der-frankenschock-angerichtet-hat/story/23117020"}
+      - {label: "Le Temps", url: "https://www.letemps.ch/economie/berne-disseque-effets-franc-fort"}
+      - {label: "Reuters", url: "https://www.reuters.com/article/us-swiss-franc-effect/swiss-made-helped-switzerland-weather-currency-storm-idUSKBN1CT0UT"}
+
 work_in_progress:
   - title: "Measuring monetary policy shocks"
     authors:
@@ -421,9 +442,3 @@ work_in_progress:
       on firm's currency choice.
     links:
       wp: "https://ideas.repec.org/p/irn/wpaper/19-07.html"
-      paper: "https://www.research-collection.ethz.ch/entities/publication/05182ece-d698-4664-86f3-ea8868cf7a36"
-    news:
-      - {label: "NZZ", url: "https://www.nzz.ch/wirtschaft/was-der-franken-schock-gekostet-hat-ld.1323901"}
-      - {label: "Tages-Anzeiger", url: "https://www.tagesanzeiger.ch/wirtschaft/standardwas-der-frankenschock-angerichtet-hat/story/23117020"}
-      - {label: "Le Temps", url: "https://www.letemps.ch/economie/berne-disseque-effets-franc-fort"}
-      - {label: "Reuters", url: "https://www.reuters.com/article/us-swiss-franc-effect/swiss-made-helped-switzerland-weather-currency-storm-idUSKBN1CT0UT"}
