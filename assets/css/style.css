@@ -68,7 +68,7 @@ main,
 .site-nav a {
   color: var(--ink-muted);
   text-decoration: none;
-  font-size: var(--fs-sm);
+  font-size: 1rem;   /* the body base — a step up from --fs-sm */
 }
 
 .site-nav a:hover { color: var(--link); }
@@ -174,9 +174,9 @@ img { max-width: 100%; height: auto; }
   z-index: 10;
 }
 
-/* postal address block */
+/* postal address block — same size and colour as the bio prose above it;
+   only the line breaks distinguish it */
 .address {
-  color: var(--ink-muted);
   margin-bottom: 0.6rem;
 }
 
