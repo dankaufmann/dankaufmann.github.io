@@ -55,7 +55,7 @@ articles:
     links:
       paper: "https://doi.org/10.1016/j.euroecorev.2022.104060"
       appendix: "/files/OvernightRate_Appendix.pdf"
-      code: "https://drive.switch.ch/index.php/s/YCvU1ahOXuHulMD"
+      code: "/files/OvernightRate_Code.zip"
     news:
       - {label: "Finanz und Wirtschaft", url: "/files/OvernightRate_FinanzUndWirtschaft.pdf"}
 
@@ -153,7 +153,7 @@ articles:
      I assess the stability of the monetary environment in Switzerland over the past two centuries. In order to control for transitory measurement errors, in particular in nineteenth century data, I use an unobserved-components stochastic-volatility model to extract the permanent trends from several nominal variables. The descriptive analysis of these trends suggests that the current monetary regime, flexible inflation targeting, provided a relatively stable monetary environment. Although the trends are quite stable for the nineteenth century, the estimates are imprecise. We should therefore be cautious when characterizing metal currency regimes as providing a stable monetary environment. A discussion of the results shows that the apparent success of flexible inflation targeting poses new challenges for the implementation of monetary policy because the trend decline in inflation was associated with a trend decline in nominal interest rates.
     links:
       paper: "https://sjes.springeropen.com/articles/10.1186/s41937-019-0033-7"
-      code: "https://drive.switch.ch/index.php/s/AUto4oc7PQJxZ72"
+      code: "/files/NominalStability_Codes.zip"
 
   - title: "Measuring exchange rate, price, and output dynamics at the effective lower bound"
     authors:
