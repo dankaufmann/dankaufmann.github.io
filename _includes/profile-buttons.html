@@ -1,4 +1,5 @@
 {%- comment -%}Profile buttons, from the `profiles` list in _config.yml.{%- endcomment -%}
+<p class="profile-label">Research profiles</p>
 <p class="pub-buttons profile-buttons">
   {%- for pr in site.profiles %}
   <a class="btn" href="{{ pr.url }}" target="_blank" rel="noopener">{{ pr.short | default: pr.title }}</a>

@@ -8,10 +8,10 @@ title: Home
 <img class="portrait" src="{{ '/assets/img/portrait.jpg' | relative_url }}" alt="Daniel Kaufmann"> 
 I hold the Chair of Applied Macroeconomics at the University of Neuchâtel and am a Research Fellow at the
 KOF Swiss Economic Institute, ETH Zurich. Moreover, I am co-editor of the Swiss
-Journal of Economics and Statistics and regularly write studies on
+Journal of Economics and Statistics and regularly write articles on
 policy-relevant macroeconomic questions. My research investigates inflation, output, interest rate, and exchange rate
 dynamics over long historical episodes. I am also interested in the causal
-effects of monetary policy and the role of nominal rigidities.
+effects of central banks' actions and the role of nominal rigidities.
 
 **Research interests:** macroeconomics · monetary economics · monetary history ·
 forecasting

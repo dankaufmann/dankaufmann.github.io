@@ -8,7 +8,22 @@ Usage: {% include publication.html item=entry %}
 <div class="pub">
 
   <p class="pub-entry">
-    {%- for a in p.authors -%}
+    {%- comment -%}
+    Title first, then authors and year. A title already ending in ? or !
+    supplies its own stop, so no full stop is added after it.
+    {%- endcomment -%}
+    <span class="pub-title">
+      {%- if p.links.paper -%}
+        <a href="{{ p.links.paper }}" target="_blank" rel="noopener">{{ p.title }}</a>
+      {%- elsif p.links.wp -%}
+        <a href="{{ p.links.wp }}" target="_blank" rel="noopener">{{ p.title }}</a>
+      {%- else -%}
+        {{ p.title }}
+      {%- endif -%}
+    </span>
+    {%- assign tlast = p.title | slice: -1 -%}
+    {%- unless tlast == "?" or tlast == "!" %}.{% endunless %}
+    {% for a in p.authors -%}
       {%- if a.name == site.me -%}
         <strong>{{ a.name }}</strong>
       {%- elsif a.url -%}
@@ -19,27 +34,10 @@ Usage: {% include publication.html item=entry %}
       {%- unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless -%}
     {%- endfor -%}
     {%- if p.year %} ({{ p.year }}){% endif -%}
-    :
-    <span class="pub-title">
-      {%- if p.links.paper -%}
-        <a href="{{ p.links.paper }}" target="_blank" rel="noopener">{{ p.title }}</a>
-      {%- elsif p.links.wp -%}
-        <a href="{{ p.links.wp }}" target="_blank" rel="noopener">{{ p.title }}</a>
-      {%- else -%}
-        {{ p.title }}
-      {%- endif -%}
-    </span>
-    {%- comment -%}
-    A title already ending in ? or ! supplies its own stop — adding a comma or
-    period after it reads as a typo.
-    {%- endcomment -%}
-    {%- assign tlast = p.title | slice: -1 -%}
-    {%- if tlast == "?" or tlast == "!" -%}
-    {%- elsif p.journal %},{% else %}.{% endif -%}
-    {%- if p.journal %} <em>{{ p.journal }}</em>
+    {%- if p.journal %}, <em>{{ p.journal }}</em>
       {%- if p.volume %}, {{ p.volume }}{% endif -%}
       {%- if p.pages %}, {{ p.pages }}{% endif -%}.
-    {%- endif -%}
+    {%- else %}.{% endif -%}
     {%- if p.status %} {{ p.status }}.{% endif -%}
     {%- if p.doi %} <a class="pub-doi" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">doi:{{ p.doi }}</a>{% endif -%}
   </p>

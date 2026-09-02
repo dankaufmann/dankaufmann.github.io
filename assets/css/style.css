@@ -319,10 +319,19 @@ img { max-width: 100%; height: auto; }
   line-height: 2;
 }
 
+/* label above the profile buttons on the homepage */
+.profile-label {
+  font-size: var(--fs-xs);
+  color: var(--ink-muted);
+  font-weight: 600;
+  margin: 1.4rem 0 0.5rem !important;
+  clear: none;
+}
+
 /* profile buttons on the homepage */
 .profile-buttons {
   clear: none;
-  margin-top: 1.1rem !important;
+  margin-top: 0 !important;
   margin-bottom: 1.5rem;
 }
 
