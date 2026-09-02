@@ -16,7 +16,7 @@ Usage: {% include datatable.html items=group.items %}
           {%- for l in i.links offset:1 -%}
             <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{%- unless forloop.last %} · {% endunless -%}
           {%- endfor -%}
-        </span>{% endif %}</td>
+        </span>.{% endif %}</td>
     </tr>
   {%- endfor %}
   </tbody>
