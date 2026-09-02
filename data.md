@@ -8,6 +8,8 @@ description: Datasets constructed by Daniel Kaufmann, and links to data maintain
 <p class="pub-buttons section-nav">
   <a class="btn" href="#my-data">My data</a>
   <a class="btn" href="#other-data">Data by other researchers</a>
+  <a class="btn" href="#historical-data">Historical</a>
+  <a class="btn" href="#modern-data">Modern</a>
 </p>
 
 ## My data {#my-data}
@@ -18,26 +20,16 @@ Datasets constructed in the course of various research projects.
 
 ## Data by other researchers {#other-data}
 
-### Historical data
+### Historical data {#historical-data}
 
 {% for group in site.data.datalinks.historical %}
 <h4>{{ group.region }}</h4>
-<ul class="linklist">
-{%- for i in group.items %}
-  <li><span class="linkname">{{ i.name }}</span> — {{ i.description }}
-    {%- for l in i.links %} <a href="{{ l.url }}">{{ l.label }}</a>{% unless forloop.last %} ·{% endunless %}{% endfor %}</li>
-{%- endfor %}
-</ul>
+{% include datatable.html items=group.items %}
 {% endfor %}
 
-### Modern data
+### Modern data {#modern-data}
 
 {% for group in site.data.datalinks.modern %}
 <h4>{{ group.region }}</h4>
-<ul class="linklist">
-{%- for i in group.items %}
-  <li><span class="linkname">{{ i.name }}</span> — {{ i.description }}
-    {%- for l in i.links %} <a href="{{ l.url }}">{{ l.label }}</a>{% unless forloop.last %} ·{% endunless %}{% endfor %}</li>
-{%- endfor %}
-</ul>
+{% include datatable.html items=group.items %}
 {% endfor %}

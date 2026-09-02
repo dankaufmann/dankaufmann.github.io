@@ -9,6 +9,24 @@
   --link-hover: #0d3b5c;
   --bg:         #ffffff;
   --measure:    52rem;
+
+  /* accent — awards and the draft banner. The only hue besides link blue. */
+  --accent:      #7a5c00;
+  --accent-bg:   #fff8e1;
+  --accent-rule: #f0e0a0;
+
+  /* Type scale. Every font-size on the site comes from one of these five;
+     do not introduce ad-hoc rem values. Body prose is the 1rem default and
+     needs no token. */
+  --fs-xs:   0.86rem;  /* buttons, toggles, asides, banner, footer */
+  --fs-sm:   0.94rem;  /* nav, lists, tables, publication entries */
+  --fs-h3:   1.05rem;
+  --fs-h2:   1.2rem;
+  --fs-h1:   1.65rem;
+
+  /* hanging indent that separates publication entries now that the
+     rules between them are gone */
+  --pub-indent: 1.6rem;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -50,7 +68,7 @@ main,
 .site-nav a {
   color: var(--ink-muted);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
 }
 
 .site-nav a:hover { color: var(--link); }
@@ -69,9 +87,9 @@ h1, h2, h3 {
   margin-block: 2rem 0.6rem;
 }
 
-h1 { font-size: 1.65rem; margin-top: 0.5rem; }
-h2 { font-size: 1.2rem; }
-h3 { font-size: 1.02rem; }
+h1 { font-size: var(--fs-h1); margin-top: 0.5rem; }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
 
 p, ul, ol { margin-block: 0 1rem; }
 ul, ol { padding-left: 1.25rem; }
@@ -100,7 +118,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin-block: 2rem; }
 .news { list-style: none; padding-left: 0; }
 .news li {
   margin-bottom: 0.85rem;
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   padding-left: 8.4rem;
   text-indent: -8.4rem;   /* hanging indent: date sits in its own column */
 }
@@ -110,7 +128,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin-block: 2rem; }
   text-indent: 0;
   color: var(--ink-muted);
   font-variant-numeric: tabular-nums;
-  font-size: 0.88rem;
+  font-size: var(--fs-xs);
   vertical-align: top;
 }
 
@@ -122,10 +140,10 @@ hr { border: 0; border-top: 1px solid var(--rule); margin-block: 2rem; }
 .dataset h3 { margin-top: 0; }
 .dataset .meta {
   color: var(--ink-muted);
-  font-size: 0.88rem;
+  font-size: var(--fs-xs);
 }
 
-table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+table { border-collapse: collapse; width: 100%; font-size: var(--fs-sm); }
 th, td { text-align: left; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--rule); }
 
 img { max-width: 100%; height: auto; }
@@ -138,7 +156,7 @@ img { max-width: 100%; height: auto; }
   border-top: 1px solid var(--rule);
   padding-block: 1.25rem 3rem;
   color: var(--ink-muted);
-  font-size: 0.88rem;
+  font-size: var(--fs-xs);
 }
 .site-footer a { color: var(--ink-muted); }
 
@@ -156,14 +174,6 @@ img { max-width: 100%; height: auto; }
   z-index: 10;
 }
 
-@media (max-width: 34rem) {
-  body { font-size: 16px; }
-  .site-header { padding-top: 1.75rem; }
-  .portrait { float: none; display: block; margin: 0 0 1.25rem 0; width: 11rem; }
-  .news li { padding-left: 0; text-indent: 0; }
-  .news .date { display: block; width: auto; margin-bottom: 0.1rem; }
-}
-
 /* postal address block */
 .address {
   color: var(--ink-muted);
@@ -171,33 +181,42 @@ img { max-width: 100%; height: auto; }
 }
 
 /* --- publications ------------------------------------------------------ */
+/* One entry is a single flowing line — authors, title, journal at one size
+   in one colour, with the title the only emphasis. Entries are separated by
+   whitespace and a hanging indent rather than by rules. */
 .pub {
-  padding-block: 1.15rem;
-  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.6rem;
 }
-.pub:last-of-type { border-bottom: 0; }
 
 .pub p { margin: 0 0 0.25rem; }
 
-.pub-authors { color: var(--ink-muted); font-size: 0.94rem; }
-
-.pub-title {
-  font-size: 1.02rem;
-  font-weight: 600;
-  line-height: 1.4;
+.pub-entry {
+  font-size: var(--fs-sm);
+  padding-left: var(--pub-indent);
+  text-indent: calc(-1 * var(--pub-indent));
 }
+
+.pub-title { font-weight: 600; }
 .pub-title a { color: var(--ink); text-decoration: none; }
 .pub-title a:hover { color: var(--link); text-decoration: underline; }
 
-.pub-meta { color: var(--ink-muted); font-size: 0.92rem; }
 .pub-doi { color: var(--ink-muted); }
+
+/* everything below the entry line aligns to the hanging indent */
+.pub .pub-buttons,
+.pub .pub-award,
+.pub .pub-news,
+.pub > .abstract,
+.pub > .pub-note {
+  margin-left: var(--pub-indent);
+}
 
 /* button row */
 .pub-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: 0.6rem !important;
+  margin-top: 0.5rem !important;
 }
 
 .btn {
@@ -205,7 +224,7 @@ img { max-width: 100%; height: auto; }
   padding: 0.2rem 0.7rem;
   border: 1px solid var(--rule);
   border-radius: 3px;
-  font-size: 0.84rem;
+  font-size: var(--fs-xs);
   line-height: 1.5;
   color: var(--ink-muted);
   text-decoration: none;
@@ -219,12 +238,12 @@ img { max-width: 100%; height: auto; }
 }
 
 /* expandable abstract */
-.abstract { margin-top: 0.55rem; }
+.abstract { margin-top: 0.4rem; }
 
 .abstract summary {
   display: inline-block;
   cursor: pointer;
-  font-size: 0.86rem;
+  font-size: var(--fs-xs);
   color: var(--ink-muted);
   list-style: none;
   user-select: none;
@@ -251,7 +270,7 @@ img { max-width: 100%; height: auto; }
   margin: 0.5rem 0 0.2rem 1rem;
   padding-left: 0.85rem;
   border-left: 2px solid var(--rule);
-  font-size: 0.93rem;
+  font-size: var(--fs-sm);
   color: var(--ink);
 }
 
@@ -260,25 +279,25 @@ img { max-width: 100%; height: auto; }
   background: #f7f7f5;
   border-left: 3px solid var(--rule);
   padding: 0.7rem 0.9rem;
-  font-size: 0.9rem;
+  font-size: var(--fs-xs);
   color: var(--ink-muted);
 }
 
 /* award, note, press */
 .pub-award {
-  font-size: 0.86rem;
-  color: #7a5c00;
+  font-size: var(--fs-xs);
+  color: var(--accent);
 }
 .pub-note {
-  font-size: 0.88rem;
+  font-size: var(--fs-xs);
   color: var(--ink-muted);
   font-style: italic;
 }
 .abstract .pub-note { margin: 0.4rem 0 0.2rem 1rem; padding-left: 0.85rem; }
 .pub-news {
-  font-size: 0.85rem;
+  font-size: var(--fs-xs);
   color: var(--ink-muted);
-  margin-top: 0.5rem !important;
+  margin-top: 0.45rem !important;
 }
 .pub-news a { color: var(--ink-muted); }
 .pub-news a:hover { color: var(--link); }
@@ -287,13 +306,13 @@ img { max-width: 100%; height: auto; }
 .draft-banner {
   margin: 0;
   padding: 0.7rem 1.25rem;
-  background: #fff8e1;
-  border-bottom: 1px solid #f0e0a0;
-  color: #6b5a20;
-  font-size: 0.88rem;
+  background: var(--accent-bg);
+  border-bottom: 1px solid var(--accent-rule);
+  color: var(--accent);
+  font-size: var(--fs-xs);
   text-align: center;
 }
-.draft-banner a { color: #6b5a20; }
+.draft-banner a { color: var(--accent); }
 
 .footer-profiles {
   margin-bottom: 0.4rem;
@@ -316,31 +335,67 @@ img { max-width: 100%; height: auto; }
 }
 
 /* anchored headings should not sit flush against the viewport top */
-h2[id] { scroll-margin-top: 1.25rem; }
+h2[id], h3[id] { scroll-margin-top: 1.25rem; }
 
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
 
-/* data link lists */
+/* --- data source table -------------------------------------------------- */
 h4 {
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   margin-block: 1.5rem 0.5rem;
   color: var(--ink-muted);
   font-weight: 600;
 }
-.linklist {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0.5rem;
+
+/* Two columns: the source name (itself the link) and what it covers.
+   No rules — the column edge is the structure. */
+.datatable { margin-bottom: 1.25rem; }
+
+.datatable th,
+.datatable td {
+  border-bottom: 0;
+  vertical-align: baseline;
+  padding: 0.35rem 0 0.35rem 0;
 }
-.linklist li {
-  margin-bottom: 0.65rem;
-  font-size: 0.94rem;
-  padding-left: 1rem;
-  text-indent: -1rem;
+
+.datatable th {
+  width: 13rem;   /* the two longest names ("Historical Statistics of
+                     Switzerland Online (HSSO)") wrap to two lines, not four */
+  padding-right: 1rem;
+  font-weight: 600;
 }
-.linkname { font-weight: 600; }
+
+.datatable td { color: var(--ink-muted); }
+
+.datatable .alt-links { white-space: nowrap; }
 
 /* stacked toggles inside a dataset entry sit closer together */
 .dataset .abstract + .abstract { margin-top: 0.25rem; }
+
+/* --- narrow screens ----------------------------------------------------- */
+@media (max-width: 34rem) {
+  body { font-size: 16px; }
+  .site-header { padding-top: 1.75rem; }
+  .portrait { float: none; display: block; margin: 0 0 1.25rem 0; width: 11rem; }
+  .news li { padding-left: 0; text-indent: 0; }
+  .news .date { display: block; width: auto; margin-bottom: 0.1rem; }
+
+  /* the hanging indent costs horizontal space we do not have */
+  .pub-entry { padding-left: 0; text-indent: 0; }
+  .pub .pub-buttons,
+  .pub .pub-award,
+  .pub .pub-news,
+  .pub > .abstract,
+  .pub > .pub-note { margin-left: 0; }
+
+  /* two columns will not fit: stack name above description */
+  .datatable,
+  .datatable tbody,
+  .datatable tr,
+  .datatable th,
+  .datatable td { display: block; width: auto; }
+  .datatable th { padding: 0 0 0.1rem 0; }
+  .datatable td { padding: 0 0 0.85rem 0; }
+}
