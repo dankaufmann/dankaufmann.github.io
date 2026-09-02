@@ -43,7 +43,7 @@ articles:
 
   - title: "Overnight rate and signalling effects of central bank bills"
     authors:
-      - {name: "Fabio Canetg", url: "https://sites.google.com/view/fabiocanetg/home"}
+      - {name: "Fabio Canetg", url: "https://www.fabiocanetg.ch/"}
       - {name: "Daniel Kaufmann"}
     year: 2022
     journal: "European Economic Review"
@@ -74,7 +74,7 @@ articles:
       paper: "https://doi.org/10.1111/ecca.12412"
       appendix: "/files/StickyWages_Appendix.pdf"
     news:
-      - {label: "Tages-Anzeiger", url: "https://blog.tagesanzeiger.ch/nevermindthemarkets/index.php/46157/mehr-lohn-trotz-krise/"}
+      - {label: "Finanz und Wirtschaft", url: "https://www.fuw.ch/article/nmtm-die-relevanten-loehne-werden-trotz-krise-steigen"}
 
   - title: "A daily fever curve for the Swiss economy"
     authors:
@@ -126,7 +126,7 @@ articles:
 
   - title: "Constrained interest rates and changing dynamics at the zero lower bound"
     authors:
-      - {name: "Gregor Bäurle", url: "http://www.gregorbaeurle.ch/"}
+      - {name: "Gregor Bäurle"}
       - {name: "Daniel Kaufmann"}
       - {name: "Sylvia Kaufmann"}
       - {name: "Rodney Strachan"}
@@ -157,7 +157,7 @@ articles:
 
   - title: "Measuring exchange rate, price, and output dynamics at the effective lower bound"
     authors:
-      - {name: "Gregor Bäurle", url: "http://www.gregorbaeurle.ch/"}
+      - {name: "Gregor Bäurle"}
       - {name: "Daniel Kaufmann"}
     year: 2018
     journal: "Oxford Bulletin of Economics and Statistics"
@@ -218,7 +218,7 @@ articles:
 
   - title: "Asymmetries in price-setting behavior: New microeconometric evidence from Switzerland"
     authors:
-      - {name: "Bo E. Honoré", url: "https://www.princeton.edu/~honore/"}
+      - {name: "Bo E. Honoré", url: "https://honore.scholar.princeton.edu/"}
       - {name: "Daniel Kaufmann"}
       - {name: "Sarah Lein", url: "http://www.sarah-lein.ch/"}
     year: 2012
@@ -404,7 +404,7 @@ work_in_progress:
   - title: "Export prices, markups, and currency choice after a large appreciation"
     authors:
       - {name: "Daniel Kaufmann"}
-      - {name: "Tobias Renkin", url: "https://sites.google.com/site/tobiasrenkin/"}
+      - {name: "Tobias Renkin", url: "https://www.tobiasrenkin.com/"}
     year: 2019
     status: "In progress"
     abstract: >
