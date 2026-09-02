@@ -132,10 +132,10 @@ hr { border: 0; border-top: 1px solid var(--rule); margin-block: 2rem; }
   vertical-align: top;
 }
 
-/* dataset entries on the Data page */
+/* dataset entries on the Data page — separated by whitespace, no rules,
+   matching the publication entries */
 .dataset {
-  padding-block: 1.1rem;
-  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.6rem;
 }
 .dataset h3 { margin-top: 0; }
 .dataset .meta {
@@ -337,6 +337,16 @@ img { max-width: 100%; height: auto; }
 /* anchored headings should not sit flush against the viewport top */
 h2[id], h3[id] { scroll-margin-top: 1.25rem; }
 
+/* section marker */
+h2::before,
+h3[id]::before {
+  content: "\25AA";          /* ▪ black small square */
+  color: var(--ink-muted);
+  margin-right: 0.55rem;
+  font-size: 0.72em;
+  vertical-align: 0.12em;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
@@ -364,7 +374,7 @@ h4 {
   width: 13rem;   /* the two longest names ("Historical Statistics of
                      Switzerland Online (HSSO)") wrap to two lines, not four */
   padding-right: 1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .datatable td { color: var(--ink-muted); }

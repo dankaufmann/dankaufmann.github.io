@@ -39,7 +39,7 @@
   <footer class="site-footer">
     <p class="footer-profiles">
       {%- for pr in site.profiles %}
-      <a href="{{ pr.url }}">{{ pr.title }}</a>{% unless forloop.last %} <span aria-hidden="true">·</span>{% endunless %}
+      <a href="{{ pr.url }}" target="_blank" rel="noopener">{{ pr.title }}</a>{% unless forloop.last %} <span aria-hidden="true">·</span>{% endunless %}
       {%- endfor %}
     </p>
     <p>&copy; {{ 'now' | date: "%Y" }} Daniel Kaufmann</p>

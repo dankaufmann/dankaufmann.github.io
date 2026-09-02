@@ -54,7 +54,7 @@ articles:
       We analyse the impact of interest-bearing central bank bills on financial market variables in Switzerland. The unique institutional setting allows us to identify the causal effects of two orthogonal shocks occurring on days with central bank bill auctions through heteroscedasticity: an overnight interest rate shock and a signalling shock. The first shock raises the overnight interest rate and modestly appreciates the exchange rate. The signalling shock appreciates the exchange rate more strongly. In addition, it lowers stock prices, long-term interest rates, as well as inflation expectations, and it raises corporate bond spreads. The signalling shock is economically more important for forward-looking variables than the overnight rate shock. The results suggest that liquidity-absorbing operations between official monetary policy decisions affect financial market variables by revealing information about the central bank’s future policy actions.
     links:
       paper: "https://doi.org/10.1016/j.euroecorev.2022.104060"
-      appendix: "https://drive.switch.ch/index.php/s/ZMSc9RhKizOKQhU"
+      appendix: "/files/OvernightRate_Appendix.pdf"
       code: "https://drive.switch.ch/index.php/s/YCvU1ahOXuHulMD"
     news:
       - {label: "Finanz und Wirtschaft", url: "/files/OvernightRate_FinanzUndWirtschaft.pdf"}
@@ -72,7 +72,7 @@ articles:
       We study the causal effects of downward nominal wage rigidity after a deflationary monetary policy shock using Swiss data on employee-level contractual wages matched with income and employment from social security register data. We exploit the discontinuity around the origin of the wage growth distribution to compare the outcomes of individuals with wage freezes (treatment group) and small wage cuts (control group) before and after an unexpected decision by the Swiss National Bank leading to a 1% decline of the price level. Locally (that is, near the origin of the wage growth distribution), downward nominal wage rigidities cause a 4.4% decline in income and a 0.7 percentage point increase in the probability of unemployment. In the aggregate, income declines by 0.3% and the probability of unemployment increases by 0.05 percentage points.
     links:
       paper: "https://doi.org/10.1111/ecca.12412"
-      appendix: "https://drive.switch.ch/index.php/s/kPvvEukfN0ZLjmb"
+      appendix: "/files/StickyWages_Appendix.pdf"
     news:
       - {label: "Tages-Anzeiger", url: "https://blog.tagesanzeiger.ch/nevermindthemarkets/index.php/46157/mehr-lohn-trotz-krise/"}
 
@@ -93,9 +93,9 @@ articles:
     news:
       - {label: "Republik", url: "https://www.republik.ch/2020/06/08/seismografie-der-krise"}
       - {label: "Finanz und Wirtschaft", url: "https://www.fuw.ch/article/deutsche-autobauer-ziehen-europa-runter/"}
-      - {label: "Solothurner Zeitung", url: "https://www.solothurnerzeitung.ch/wirtschaft/die-wirtschaft-faengt-sich-auf-8-fakten-zu-jobs-und-konsum-die-zuversichtlich-stimmen-138126282"}
-      - {label: "Canal Alpha", url: "http://www.canalalpha.ch/actu/linvite-daniel-kaufmann-les-mecanismes-dune-crise/"}
-      - {label: "Arcinfo", url: "https://www.arcinfo.ch/dossiers/coronavirus/articles/pour-l-economiste-de-l-unine-daniel-kaufmann-le-taux-de-chomage-va-encore-croitre-apres-le-redemarrage-de-l-economie-955424"}
+      - {label: "Solothurner Zeitung", url: "https://www.solothurnerzeitung.ch/wirtschaft/die-wirtschaft-fangt-sich-auf-8-fakten-zu-jobs-und-konsum-die-zuversichtlich-stimmen-ld.1227517"}
+      - {label: "Canal Alpha", url: "https://canalalpha.ch/play/le-journal/topic/19263/linvite-daniel-kaufmann-les-mecanismes-dune-crise"}
+      - {label: "Arcinfo", url: "https://www.arcinfo.ch/neuchatel-canton/pour-leconomiste-de-lunine-daniel-kaufmann-le-taux-de-chomage-va-encore-croitre-apres-le-redemarrage-de-leconomie-955424"}
 
   - title: "Is deflation costly after all? The perils of erroneous historical classifications"
     authors:
@@ -172,7 +172,7 @@ articles:
       update: "/files/ExchangeRatePriceOutput_Update.pdf"
       appendix: "/files/ExchangeRatePriceOutput_Appendix.pdf"
     news:
-      - {label: "Jackson Hole speech, T. Jordan", url: "https://www.snb.ch/en/mmr/speeches/id/ref_20150828_tjn/source/ref_20150828_tjn.en.pdf"}
+      - {label: "Jackson Hole speech, T. Jordan", url: "https://www.snb.ch/en/publications/communication/speeches/2015/ref_20150828_tjn"}
 
   - title: "Business tendency surveys and macroeconomic fluctuations"
     authors:
@@ -232,7 +232,7 @@ articles:
       paper: "https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4616.2012.00558.x"
       wp: "http://www.snb.ch/n/mmr/reference/working_paper_2012_09/source/working_paper_2012_09.en.pdf"
     news:
-      - {label: "Jackson Hole speech, T. Jordan", url: "https://www.snb.ch/en/mmr/speeches/id/ref_20150828_tjn/source/ref_20150828_tjn.en.pdf"}
+      - {label: "Jackson Hole speech, T. Jordan", url: "https://www.snb.ch/en/publications/communication/speeches/2015/ref_20150828_tjn"}
 
   - title: "Is there a Swiss price puzzle?"
     authors:
@@ -322,7 +322,7 @@ other:
       paper: "https://libra.unine.ch/Publications/Daniel_Kaufmann/41752"
       code: "https://github.com/dankaufmann/lir"
     news:
-      - {label: "Le Temps", url: "https://www.letemps.ch/economie/daniel-kaufmann-fin-taux-negatifs-rencherirait-franc-3-7"}
+      - {label: "Le Temps", url: "https://www.letemps.ch/economie/finance/daniel-kaufmann-fin-taux-negatifs-rencherirait-franc-3-7"}
 
 work_in_progress:
   - title: "Measuring monetary policy shocks"
