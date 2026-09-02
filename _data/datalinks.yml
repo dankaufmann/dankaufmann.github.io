@@ -31,9 +31,10 @@ historical:
         description: "Archive of historical documents for the US, safeguarding and providing access to economic history — particularly the history of the Federal Reserve System."
         links: [{label: "Link", url: "https://fraser.stlouisfed.org"}]
       - name: "NBER Macrohistory"
-        description: "Historical database of the NBER covering many aspects of the pre-WWI and interwar economy. Some coverage of the UK, France and Germany. These data are also available on [FRED](https://fred.stlouisfed.org/release?rid=257&soid=55)."
+        description: "Historical database of the NBER covering many aspects of the pre-WWI and interwar economy. Some coverage of the UK, France and Germany. These data are also available on "
         links:
-          - [{label: "Link", url: "http://www.nber.org/databases/macrohistory/contents/"}]
+          - {label: "Link", url: "http://www.nber.org/databases/macrohistory/contents/"}
+          - {label: "FRED", url: "https://fred.stlouisfed.org/release?rid=257&soid=55"}
       - name: MeasuringWorth
         description: "GDP, price and wage data for the US. Linked series starting in the 18th century and updated with modern data. Series are spliced from various sources and subject to a referee process. Free use upon request."
         links: [{label: "Link", url: "https://www.measuringworth.com/"}]
@@ -41,8 +42,11 @@ historical:
   - region: United Kingdom
     items:
       - name: A Millennium of Macroeconomic Data
-        description: "Macroeconomic data compiled by the Bank of England from various sources. Series are spliced from various sources and regularly updated with modern data. These data are also available on [FRED](https://fred.stlouisfed.org/categories/33839)."
-        links: [{label: "Link", url: https://www.bankofengland.co.uk/statistics/research-datasets}]
+        description: "Macroeconomic data compiled by the Bank of England from various sources. Series are spliced from various sources and regularly updated with modern data. These data are also available on"
+        links: 
+         - {label: "Link", url: "https://www.bankofengland.co.uk/statistics/research-datasets"}
+         - {label: "FRED", url: "https://fred.stlouisfed.org/categories/33839"}
+        
       - name: Gregory Clark
         description: "Income, wages and prices for England starting in medieval times."
         links: [{label: "Link", url: "http://faculty.econ.ucdavis.edu/faculty/gclark/data.html"}]
