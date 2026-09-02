@@ -13,8 +13,11 @@ policy-relevant macroeconomic questions. My research investigates inflation, out
 dynamics over long historical episodes. I am also interested in the causal
 effects of central banks' actions and the role of nominal rigidities.
 
-**Research interests:** macroeconomics · monetary economics · monetary history ·
-forecasting
+## Research interests {#research-interests}
+
+macroeconomics · monetary economics · monetary history · forecasting
+
+## Research profiles {#research-profiles}
 
 {% include profile-buttons.html %}
 

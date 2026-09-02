@@ -319,15 +319,6 @@ img { max-width: 100%; height: auto; }
   line-height: 2;
 }
 
-/* label above the profile buttons on the homepage */
-.profile-label {
-  font-size: var(--fs-xs);
-  color: var(--ink-muted);
-  font-weight: 600;
-  margin: 1.4rem 0 0.5rem !important;
-  clear: none;
-}
-
 /* profile buttons on the homepage */
 .profile-buttons {
   clear: none;
@@ -373,6 +364,8 @@ h3[id]::before {
           mask: var(--icon) center / contain no-repeat;
 }
 
+.page-home h2#research-interests { --icon: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E %3Cpath d=%22M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z%22/%3E %3Cline x1=%227%22 y1=%227%22 x2=%227.01%22 y2=%227%22/%3E %3C/svg%3E"); }
+.page-home h2#research-profiles  { --icon: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E %3Cpath d=%22M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2%22/%3E %3Ccircle cx=%2212%22 cy=%227%22 r=%224%22/%3E %3C/svg%3E"); }
 .page-home h2#news    { --icon: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E %3Cpath d=%22m3 11 18-5v12L3 14v-3z%22/%3E %3Cpath d=%22M11.6 16.8a3 3 0 1 1-5.8-1.6%22/%3E %3C/svg%3E"); }
 .page-home h2#contact { --icon: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E %3Crect x=%222%22 y=%224%22 width=%2220%22 height=%2216%22 rx=%222%22/%3E %3Cpolyline points=%222.5 5.5 12 13 21.5 5.5%22/%3E %3C/svg%3E"); }
 .page-research h2  { --icon: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E %3Cpath d=%22M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z%22/%3E %3Cpolyline points=%2214 2 14 8 20 8%22/%3E %3Cline x1=%228%22 y1=%2213%22 x2=%2215%22 y2=%2213%22/%3E %3Cline x1=%228%22 y1=%2217%22 x2=%2215%22 y2=%2217%22/%3E %3C/svg%3E"); }
