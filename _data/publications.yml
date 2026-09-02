@@ -130,8 +130,8 @@ articles:
     authors:
       - {name: "Gregor Bäurle"}
       - {name: "Daniel Kaufmann"}
-      - {name: "Sylvia Kaufmann"}
-      - {name: "Rodney Strachan"}
+      - {name: "Sylvia Kaufmann", url: "https://sites.google.com/view/sylviakaufmann/"}
+      - {name: "Rodney Strachan", url: "https://sites.google.com/view/rodneystrachan/"}
     year: 2019
     journal: "Studies in Nonlinear Dynamics & Econometrics"
     volume: "24(2)"
@@ -290,8 +290,6 @@ other:
       report: "https://ideas.repec.org/p/irn/polrep/24-03.html"
 
   - title: "Study to evaluate the future data compilation for the Swiss Consumer Sentiment Index"
-    # Author order per the report's own recommended citation (p. 1 of the PDF):
-    # FORS (Lausanne) authors first, then IRENE.
     authors:
       - {name: "Georg Lutz"}
       - {name: "Boris Wernli"}
@@ -309,7 +307,7 @@ other:
 
   - title: "Do bonuses offset the allocative effects of downward rigid base wages?"
     authors:
-      - {name: "Anne Kathrin Funk", url: "https://sites.google.com/view/annekathrinfunk/home"}
+      - {name: "Anne Kathrin Funk", url: "https://sites.google.com/view/annekathrinfunk/"}
       - {name: "Daniel Kaufmann"}
     year: 2022
     journal: "American Economic Review: Papers & Proceedings"
@@ -330,6 +328,19 @@ other:
       I simulate the distribution of SNB profits to the Confederation and Cantons under a hypothetical scenario, in which the new agreement between the Swiss National Bank and the Federal Department of Finance would have been in place from 2005-2019. All else equal, the new agreement leads to: (i) a higher average profit distribution; (ii) larger annual fluctuations of profit distributions, complicating fiscal authorities' budget planning; (iii) pro-cyclical profit distributions (lower [higher] during economic recessions [booms]). Having said that, the SNB's profit distributions account for a relatively modest share of total government expenditures. In addition, to offset the volatile and pro-cyclical profit distributions, fiscal authorities may borrow on capital markets.
     links:
       report: "https://ideas.repec.org/p/irn/polrep/21-01.html"
+
+  - title: "Interest rates in Switzerland 1852-2020"
+    authors:
+      - {name: "Niko Hauzenberger", url: "https://scholar.google.at/citations?user=uXtLiLIAAAAJ&hl=de"}
+      - {name: "Daniel Kaufmann"}
+      - {name: "Rebecca Stuart", url: "https://www.rebeccastuart.net/"}
+      - {name: "Cédric Tille", url: "https://sites.google.com/site/cedrictilleheid/"}
+    year: 2021
+    journal: "Grundlagen für die Wirtschaftspolitik 24, Staatssekretariat für Wirtschaft SECO"
+    abstract: >
+     The large structural decline in real interest rates constrains policymakers, notably central banks' scope to cut rates in recessions. We place this decline in historical perspective for Switzerland, constructing quarterly data back to 1852 from novel archival sources and extracting long-term trends for interest rates, inflation, and exchange-rate growth. Nominal rates have reached historical lows since the Global Financial Crisis, driven by lower trend inflation and falling foreign rates. Our econometric analysis links the Swiss real rate to global drivers and demographics: a larger elderly population share lowers it. The postwar "interest rate island" has vanished; however, there is little evidence that long-term real interest rate trends in Switzerland will substantially increase in the near future.
+    links:
+      report: "https://www.seco.admin.ch/dam/en/sd-web/EzUjTsbb-l65/Grundlagen-Wirtschaftspolitik-024-SECO-2021-DE.pdf"
 
   - title: "Wie weiter mit der Tiefzinspolitik? Szenarien und Alternativen"
     authors:
@@ -372,8 +383,7 @@ work_in_progress:
       - {name: "Daniel Kaufmann"}
     status: "Revise and resubmit, Journal of Applied Econometrics"
     abstract: >
-      We predict unobserved monetary policy shocks from the cross-sectional
-      impact on financial market variables estimated using IV.
+      We propose a two-step approach to measure monetary policy shocks based on daily financial market data. First, we estimate the causal impact of a monetary policy shock on financial market variables using standard instrumental variables techniques (high-frequency and heteroskedasticity-based identification). Second, we exploit the cross-sectional variation of the causal impact to predict the underlying unobserved monetary policy shocks based on the Kalman filter. The two-step approach delivers a more accurate measure of monetary policy shocks. As a consequence, various anomalies documented in the literature on measuring monetary policy shocks are alleviated or resolved.
     links:
       wp: "https://ideas.repec.org/p/irn/wpaper/24-03.html"
 
@@ -395,12 +405,9 @@ work_in_progress:
     status: "In progress"
     note: "Previously titled 'What drives long-term interest rates? Evidence from the entire Swiss franc history 1852–2020'."
     abstract: >
-      We construct novel monthly interest rate and exchange rate data for
-      Switzerland and analyse the most important driving forces, particularly
-      the role of inflation uncertainty.
+      We study domestic and international drivers of long-term interest rates using newly compiled financial market data for Switzerland starting in 1852. We use a time-varying parameter vector autoregressive model to estimate long-term trends in nominal interest rates, exchange rate growth, and inflation. We then decompose the Swiss long-term interest rate trend into various drivers using an interest rate accounting framework. The decline in long-term interest rates since 1970 is mainly driven by a decline in the level of inflation. Comparing Switzerland with the rest of the world, we show that while Swiss real interest rates were higher during the 19th century, the pattern reversed after World War 2 with Swiss nominal and real rates becoming lower than foreign ones. However, this Swiss “low interest rate island” has disappeared in recent years. We document a connection between inflation risk and the Swiss term spread, as well between relative inflation risk and the difference between Swiss and foreign real interest rates.
     links:
       wp: "https://ideas.repec.org/p/irn/wpaper/22-03.html"
-      paper: "https://www.seco.admin.ch/dam/en/sd-web/EzUjTsbb-l65/Grundlagen-Wirtschaftspolitik-024-SECO-2021-DE.pdf"
 
   - title: "Regional inflation dynamics before and after the introduction of the Swiss franc, 1835–1864"
     authors:
@@ -424,12 +431,11 @@ work_in_progress:
     authors:
       - {name: "Daniel Kaufmann"}
     year: 2020
-    status: "IRENE Working Papers 20-10, Institute of Economic Research, University of Neuchâtel"
+    status: "On hold"
     abstract: >
-      The paper provides causal estimates of the impact of fiscal aid on
-      unemployment identified from regional variation in exposure to the Swiss
-      COVID-19 credit program.
+      This paper identifies the effect of variation in government-backed loan supply on unemployment exploiting regional variation in the Swiss COVID-19 lending program. The rules of the program introduce variation in loan supply across Cantons. This variation helps disentangling supply from demand effects. Higher loan supply reduces unemployment. Increasing the volume by CHF 100,000 saves between 0.22 and 0.29 jobs. Therefore, loan supply has to expand by between CHF 344,800 and CHF 454,500 to save one job. Taking into account that some of the borrowers default, saving one job costs the government between CHF 39,700 and CHF 52,400 per year. These costs are somewhat lower than unemployment benefits associated with the median income.
     links:
+      wp: "https://ideas.repec.org/p/irn/wpaper/20-10.html"
       code: "https://github.com/dankaufmann/covid19lending/"
 
   - title: "Export prices, markups, and currency choice after a large appreciation"
@@ -437,10 +443,8 @@ work_in_progress:
       - {name: "Daniel Kaufmann"}
       - {name: "Tobias Renkin", url: "https://www.tobiasrenkin.com/"}
     year: 2019
-    status: "In progress"
+    status: "On hold"
     abstract: >
-      We use a data set of Swiss firm-level export, import, and domestic prices
-      to show how price and markup adjustment after a large appreciation depend
-      on firm's currency choice.
+      We analyze export price adjustment of Swiss manufacturing firms using a novel data set of matched export, import, and domestic prices. After a large, unexpected, and permanent appreciation of the Swiss franc, export prices set in domestic currency fell less than export prices set in foreign currency. This difference prevails if we control for variation in firms' marginal cost. Through the lens of a structural model, this difference can be traced back to strategic complementarity in price setting for firms pricing in foreign currency. Meanwhile, firms setting prices in domestic currency exhibit no strategic complementarity and follow a constant markup-pricing rule.
     links:
       wp: "https://ideas.repec.org/p/irn/wpaper/19-07.html"

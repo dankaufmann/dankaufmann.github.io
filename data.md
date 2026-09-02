@@ -20,7 +20,7 @@ Here you can find data constructed in the course of my research projects.
 
 ## Data by other researchers {#other-data}
 
-I also assembled a variety of free data sources by other researchers and institutions that I found helpful in my research and policy work.
+I also assembled a variety of (mostly free) data sources by other researchers and institutions that I found helpful in my research and policy work.
 
 ### Historical data {#historical-data}
 

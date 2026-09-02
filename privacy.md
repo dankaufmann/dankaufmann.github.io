@@ -8,14 +8,14 @@ description: How this website handles data. It sets no cookies, runs no analytic
 ## Who is responsible {#responsible}
 
 Daniel Kaufmann
-Institut de recherches économiques, Université de Neuchâtel
+Institute of Economic Research, University of Neuchâtel
 Rue A.-L. Breguet 2, CH-2000 Neuchâtel, Switzerland
 <{{ site.email }}>
 
 ## No cookies and no tracking {#no-tracking}
 
 This site sets **no cookies**. It contains no analytics, no tracking pixels, no
-advertising and no social-media embeds, and it runs **no JavaScript** at all.
+advertising and no social-media embeds, and it runs no JavaScript.
 
 Nothing is loaded from third-party servers: the stylesheet, the fonts, the icons
 and the images are all served from this site itself, so visiting a page does not
@@ -26,8 +26,7 @@ shared.
 
 The site is hosted on GitHub Pages, a service of GitHub, Inc. (San Francisco,
 USA), a subsidiary of Microsoft. As with any web server, GitHub's infrastructure
-processes technical data when a page is requested — typically the requesting IP
-address, the time, the page requested and the browser's user agent. This is
+processes technical data when a page is requested. This is
 necessary to deliver the site and to keep the service secure.
 
 These logs belong to GitHub. I have no access to them, do not receive them and do
@@ -47,8 +46,7 @@ governed by their own privacy policy and over which I have no control.
 
 ## Contacting me {#contact-privacy}
 
-There is no contact form on this site and nothing is submitted through it. The
-address above is an ordinary email link. If you write to me, I process your
+The address above is an ordinary email link. If you write to me, I process your
 message in order to answer it, and keep it as ordinary correspondence.
 
 ## Your rights {#rights}

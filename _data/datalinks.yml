@@ -31,10 +31,9 @@ historical:
         description: "Archive of historical documents for the US, safeguarding and providing access to economic history — particularly the history of the Federal Reserve System."
         links: [{label: "Link", url: "https://fraser.stlouisfed.org"}]
       - name: NBER Macrohistory
-        description: "Historical database of the NBER covering many aspects of the pre-WWI and interwar economy. Some coverage of the UK, France and Germany."
+        description: "Historical database of the NBER covering many aspects of the pre-WWI and interwar economy. Some coverage of the UK, France and Germany. These data are also available on [FRED](https://fred.stlouisfed.org/release?rid=257&soid=55).
         links:
           - {label: "Link", url: "http://www.nber.org/databases/macrohistory/contents/"}
-          - {label: "FRED", url: "https://fred.stlouisfed.org/release?rid=257&soid=55"}
       - name: MeasuringWorth
         description: "GDP, price and wage data for the US. Linked series starting in the 18th century and updated with modern data. Series are spliced from various sources and subject to a referee process. Free use upon request."
         links: [{label: "Link", url: "https://www.measuringworth.com/"}]
@@ -42,8 +41,8 @@ historical:
   - region: United Kingdom
     items:
       - name: A Millennium of Macroeconomic Data
-        description: "Macroeconomic data compiled by the Bank of England from various sources. Series are spliced from various sources and regularly updated with modern data."
-        links: [{label: "Link", url: "https://fred.stlouisfed.org/categories/33839"}]
+        description: "Macroeconomic data compiled by the Bank of England from various sources. Series are spliced from various sources and regularly updated with modern data. These data are also available on [FRED](https://fred.stlouisfed.org/categories/33839)"
+        links: [{label: "Link", url: https://www.bankofengland.co.uk/statistics/research-datasets}]
       - name: Gregory Clark
         description: "Income, wages and prices for England starting in medieval times."
         links: [{label: "Link", url: "http://faculty.econ.ucdavis.edu/faculty/gclark/data.html"}]
@@ -77,10 +76,13 @@ modern:
 
   - region: United States
     items:
-      - name: St. Louis Fed
-        description: "Data collection covering all aspects of the US economy, with extensive on-site transformation and charting. ALFRED is the real-time vintage data collection."
+      - name: FRED
+        description: "Data collection covering all aspects of the US economy, with extensive on-site transformation and charting."
         links:
           - {label: "FRED", url: "https://fred.stlouisfed.org/"}
+      - name: ALFRED
+        description: "ALFRED is the real-time vintage data collection of FRED."
+        links:
           - {label: "ALFRED", url: "https://alfred.stlouisfed.org/"}
       - name: Philadelphia Fed
         description: "Real-time data center assembling data and forecasts from the Greenbook, the Survey of Professional Forecasters and the Livingston Survey."

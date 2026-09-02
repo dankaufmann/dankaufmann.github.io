@@ -4,7 +4,7 @@ tagline: Chair of Applied Macroeconomics, University of Neuchâtel
 description: >-
   Daniel Kaufmann holds the Chair of Applied Macroeconomics at the University
   of Neuchâtel. Research on inflation, output, interest rate and exchange rate
-  dynamics over long historical episodes.
+  dynamics over long historical episodes and causal effects of monetary policy.
 url: "https://dankaufmann.github.io"
 baseurl: ""
 
@@ -29,7 +29,7 @@ profiles:
     url: https://ideas.repec.org/f/pka480.html
   - title: ORCID
     url: https://orcid.org/0000-0003-3260-0660
-  - title: Université de Neuchâtel
+  - title: UniNe
     short: UniNe                # shorter label used for the homepage buttons
     url: https://libra.unine.ch/entities/person/3a6c6045-2525-4eeb-bb8a-54bca41721d0
   - title: GitHub

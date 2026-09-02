@@ -36,7 +36,7 @@ University of Neuchâtel<br>
 Institute of Economic Research<br>
 Rue A.-L. Breguet 2<br>
 CH-2000 Neuchâtel, Switzerland<br>
-Office 1.232 · +41 (0)32 718 1351
++41 (0)32 718 1351
 </p>
 
 <a href="mailto:{{ site.email }}">{{ site.email }}</a>
