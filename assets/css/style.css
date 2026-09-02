@@ -349,7 +349,10 @@ h3[id]::before {
   vertical-align: 0.12em;
 }
 
-.page-home h2::before,
+.page-home h2#research-interests::before,
+.page-home h2#research-profiles::before,
+.page-home h2#news::before,
+.page-home h2#contact::before,
 .page-research h2::before,
 .page-data h2::before,
 .page-data h3[id]::before {
