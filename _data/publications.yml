@@ -48,7 +48,7 @@ articles:
     links:
       paper: "https://doi.org/10.1111/ehr.70131"
       wp: "https://ideas.repec.org/p/irn/wpaper/24-05.html"
-      data: "https://www.dankaufmann.com/_files/ugd/681cdc_b711c0268cf340d7935dbeb430f71991.xlsx?dn=DiscountRateData_Public.xlsx"
+      data: "/files/DiscountRateData_Public.xlsx"
 
   - title: "Overnight rate and signalling effects of central bank bills"
     authors:
@@ -71,7 +71,7 @@ articles:
       appendix: "https://drive.switch.ch/index.php/s/ZMSc9RhKizOKQhU"
       code: "https://drive.switch.ch/index.php/s/YCvU1ahOXuHulMD"
     news:
-      - {label: "Finanz und Wirtschaft", url: "https://www.dankaufmann.com/_files/ugd/681cdc_193485d599454aeb90418e32bd21a31f.pdf"}
+      - {label: "Finanz und Wirtschaft", url: "/files/OvernightRate_FinanzUndWirtschaft.pdf"}
 
   - title: "Do sticky wages matter? New evidence from matched firm-survey and register data"
     authors:
@@ -106,7 +106,7 @@ articles:
     links:
       paper: "https://sjes.springeropen.com/articles/10.1186/s41937-020-00051-z"
       wp: "https://ideas.repec.org/p/irn/wpaper/20-05.html"
-      appendix: "https://www.dankaufmann.com/_files/ugd/681cdc_b095af3d56eb4f6b90b89778a2ee277c.pdf"
+      appendix: "/files/FeverCurve_Appendix.pdf"
       code: "https://github.com/dankaufmann/f-curve"
     news:
       - {label: "Republik", url: "https://www.republik.ch/2020/06/08/seismografie-der-krise"}
@@ -131,7 +131,7 @@ articles:
     links:
       paper: "https://doi.org/10.1002/jae.2762"
       wp: "http://dx.doi.org//10.3929/ethz-a-010786535"
-      update: "https://www.dankaufmann.com/_files/ugd/681cdc_be8c4c82b9f5405496b92e31f6103a81.pdf"
+      update: "/files/Deflation_Costly_Update.pdf"
       code: "https://github.com/dankaufmann/historical_inflation"
 
   - title: "Trend fundamentals and exchange rate dynamics"
@@ -150,7 +150,7 @@ articles:
     links:
       paper: "https://doi.org/10.1111/ecca.12334"
       wp: "http://dx.doi.org//10.3929/ethz-a-010513063"
-      update: "https://www.dankaufmann.com/_files/ugd/681cdc_3adecab2746a4867bdb8fd5940164a60.pdf"
+      update: "/files/TrendFundamentals_Update.pdf"
 
   - title: "Constrained interest rates and changing dynamics at the zero lower bound"
     authors:
@@ -187,7 +187,7 @@ articles:
     links:
       paper: "https://sjes.springeropen.com/articles/10.1186/s41937-019-0033-7"
       wp: "http://dx.doi.org//10.3929/ethz-a-010416200"
-      update: "https://www.dankaufmann.com/_files/ugd/681cdc_7942cd2bec184b9bb639c68a26b3c762.pdf"
+      update: "/files/NominalStability_Update.pdf"
       code: "https://drive.switch.ch/index.php/s/AUto4oc7PQJxZ72"
 
   - title: "Measuring exchange rate, price, and output dynamics at the effective lower bound"
@@ -207,8 +207,8 @@ articles:
     links:
       paper: "https://onlinelibrary.wiley.com/doi/epdf/10.1111/obes.12260"
       wp: "https://ideas.repec.org/p/snb/snbwpa/2014-10.html"
-      update: "https://www.dankaufmann.com/_files/ugd/681cdc_189f8326ea28484796247031e493616c.pdf"
-      appendix: "https://www.dankaufmann.com/_files/ugd/681cdc_5c6635eb887b413e9459b53ac0c5a807.pdf"
+      update: "/files/ExchangeRatePriceOutput_Update.pdf"
+      appendix: "/files/ExchangeRatePriceOutput_Appendix.pdf"
     news:
       - {label: "Jackson Hole speech, T. Jordan", url: "https://www.snb.ch/en/mmr/speeches/id/ref_20150828_tjn/source/ref_20150828_tjn.en.pdf"}
 
@@ -229,7 +229,7 @@ articles:
     links:
       paper: "http://www.sciencedirect.com/science/article/pii/S0169207017300547"
       wp: "http://dx.doi.org//10.3929/ethz-a-010416189"
-      update: "https://www.dankaufmann.com/_files/ugd/681cdc_fced6a00724144239af43155c21627d8.pdf"
+      update: "/files/BusinessTendencySurveys_Update.pdf"
 
   - title: "Sticky prices or rational inattention — What can we learn from sectoral price data?"
     authors:
