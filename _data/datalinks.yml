@@ -20,7 +20,7 @@ historical:
         links: [{label: "Link", url: "http://gpih.ucdavis.edu/"}]
       - name: David S. Jacks
         description: "Trade and commodity price data for various countries starting in the 18th century."
-        links: [{label: "Link", url: "http://www.sfu.ca/~djacks/data"}]
+        links: [{label: "Link", url: "https://davidjacks.org/data/"}]
 
   - region: United States
     items:

@@ -270,6 +270,8 @@ other:
       - {name: "Daniel Kaufmann"}
     year: 2026
     journal: "R package version 1.0.0"
+    abstract: >
+      Tools for identifying structural shocks using heteroskedasticity- and proxy-based instrumental variable (IV) methods in event-study settings. Supports local projection impulse response estimation, generalised weak instrument testing, recursive heteroskedasticity-IV identification, and Kalman-filter shock extraction.
     links:
       code: "http://dankaufmann.github.io/hetiv"
 
@@ -280,6 +282,8 @@ other:
       - {name: "Nima Ostovan"}
     year: 2024
     journal: "IRENE Policy Reports 24-03, Institute of Economic Research, University of Neuchâtel"
+    abstract: >
+      This report documents the use and misuse of generative artificial intelligence in academic economic research and provides guidelines for university students and instructors. It primarily addresses students and instructors in a master's program in economics; however, the use cases and guidelines may be useful in other fields and academic research in general.
     links:
       paper: "https://ideas.repec.org/p/irn/polrep/24-03.html"
 
@@ -288,8 +292,10 @@ other:
       - {name: "Daniel Kaufmann"}
     year: 2024
     journal: "Grundlagen für die Wirtschaftspolitik 43, Staatssekretariat für Wirtschaft SECO"
+    abstract: >
+      This evaluation, conducted by FORS in collaboration with IRENE, examined possible design features for the future compilation of the Swiss Consumer Sentiment Index. The way consumer sentiment is calculated in Switzerland is well in line with similar measures elsewhere, but Switzerland is the only country under review collecting data only quarterly, which severely limits the information available for business cycle monitoring. Assuming at least a monthly index is to be calculated, the report recommends a weekly rolling cross-section design with 500 weekly target interviews, a single-mode web-only survey with offline recruitment, and model-based retropolation to extend the monthly indicator back in time.
     links:
-      paper: "https://www.seco.admin.ch/dam/seco/de/dokumente/Wirtschaft/Wirtschaftslage/Konsumentenstimmung/wp_43_swiss_consumer_sentiment_index.pdf.download.pdf/wp_43_Swiss%20Consumer%20Sentiment%20Index.pdf"
+      paper: "https://www.seco.admin.ch/dam/de/sd-web/RPOVmimua2zJ/2024-02-wp-43-Future-Data-Compilation-Swiss-Consumer-Sentiment-Index-SECO.pdf"
 
   - title: "Do bonuses offset the allocative effects of downward rigid base wages?"
     authors:
@@ -310,6 +316,8 @@ other:
       - {name: "Daniel Kaufmann"}
     year: 2021
     journal: "IRENE Policy Reports 21-01, Institute of Economic Research, University of Neuchâtel"
+    abstract: >
+      I simulate the distribution of SNB profits to the Confederation and Cantons under a hypothetical scenario, in which the new agreement between the Swiss National Bank and the Federal Department of Finance would have been in place from 2005-2019. All else equal, the new agreement leads to: (i) a higher average profit distribution; (ii) larger annual fluctuations of profit distributions, complicating fiscal authorities' budget planning; (iii) pro-cyclical profit distributions (lower [higher] during economic recessions [booms]). Having said that, the SNB's profit distributions account for a relatively modest share of total government expenditures. In addition, to offset the volatile and pro-cyclical profit distributions, fiscal authorities may borrow on capital markets.
     links:
       paper: "https://ideas.repec.org/p/irn/polrep/21-01.html"
 
@@ -318,8 +326,10 @@ other:
       - {name: "Daniel Kaufmann"}
     year: 2020
     journal: "IRENE Policy Reports 20-01, Institute of Economic Research, University of Neuchâtel"
+    abstract: >
+      Diese Studie zeigt wie sich ein vorzeitiger Ausstieg aus der Tiefzinspolitik auf den Wechselkurs und die schweizerische Wirtschaft auswirken würde. Ein überraschender Ausstieg aus der Tiefzinspolitik würde den Schweizer Franken um 3-7% aufwerten. Zudem würde dies zu einem Rückgang der Wirtschaftsaktivität und der Konsumentenpreise führen. Es gibt jedoch alternative geldpolitische Strategien, die den Franken schwächen und die Nominalzinsen erhöhen. Dies würde eine höhere Inflationsrate erfordern.
     links:
-      paper: "https://libra.unine.ch/Publications/Daniel_Kaufmann/41752"
+      paper: "https://ideas.repec.org/p/irn/polrep/20-01.html"
       code: "https://github.com/dankaufmann/lir"
     news:
       - {label: "Le Temps", url: "https://www.letemps.ch/economie/finance/daniel-kaufmann-fin-taux-negatifs-rencherirait-franc-3-7"}
@@ -359,7 +369,7 @@ work_in_progress:
       the role of inflation uncertainty.
     links:
       wp: "https://ideas.repec.org/p/irn/wpaper/22-03.html"
-      paper: "https://www.seco.admin.ch/seco/de/home/Publikationen_Dienstleistungen/Publikationen_und_Formulare/Strukturwandel_Wachstum/Wachstum/interest_rates_switzerland_1852-2020.html"
+      paper: "https://www.seco.admin.ch/dam/en/sd-web/EzUjTsbb-l65/Grundlagen-Wirtschaftspolitik-024-SECO-2021-DE.pdf"
 
   - title: "Regional inflation dynamics before and after the introduction of the Swiss franc, 1835–1864"
     authors:
@@ -403,9 +413,9 @@ work_in_progress:
       on firm's currency choice.
     links:
       wp: "https://ideas.repec.org/p/irn/wpaper/19-07.html"
-      paper: "https://www.seco.admin.ch/seco/de/home/Publikationen_Dienstleistungen/Publikationen_und_Formulare/Strukturwandel_Wachstum/Strukturwandel/seco_strukturberichtersmanufacturing-prices-and-employment-after.html"
+      paper: "https://www.research-collection.ethz.ch/entities/publication/05182ece-d698-4664-86f3-ea8868cf7a36"
     news:
       - {label: "NZZ", url: "https://www.nzz.ch/wirtschaft/was-der-franken-schock-gekostet-hat-ld.1323901"}
       - {label: "Tages-Anzeiger", url: "https://www.tagesanzeiger.ch/wirtschaft/standardwas-der-frankenschock-angerichtet-hat/story/23117020"}
-      - {label: "Le Temps", url: "https://www.letemps.ch/economie/2017/10/24/berne-disseque-effets-franc-fort"}
+      - {label: "Le Temps", url: "https://www.letemps.ch/economie/berne-disseque-effets-franc-fort"}
       - {label: "Reuters", url: "https://www.reuters.com/article/us-swiss-franc-effect/swiss-made-helped-switzerland-weather-currency-storm-idUSKBN1CT0UT"}
