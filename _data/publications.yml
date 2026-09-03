@@ -129,7 +129,7 @@ articles:
     journal: "Studies in Nonlinear Dynamics & Econometrics"
     volume: "24(2)"
     doi: "10.1515/snde-2017-0098"
-    award: "Best paper award, <a href="https://www.degruyterbrill.com/de/journal/key/snde/html" target="_blank">SNDE 2020</a>"
+    award: "Best paper award [SNDE 2020](https://www.degruyterbrill.com/de/journal/key/snde/html)"
     abstract: >
       The interaction of macroeconomic variables may change as nominal short-term interest rates approach zero. In this paper, we propose to capture these changing dynamics with a state-switching parameter model which explicitly takes into account that the interest rate might be constrained near the zero lower bound by using a Tobit model. The probability of state transitions is affected by the lagged level of the interest rate. The endogenous specification of the state indicator permits dynamic conditional forecasts of the state and the system variables. We use Bayesian methods to estimate the model and to derive the forecast densities. In an application to Swiss data, we evaluate state-dependent impulse-responses to a risk premium shock identified with sign-restrictions. We provide an estimate of the latent rate, i.e. the rate lower than the constraint on the interest rate level which would be state- and model-consistent. Additionally, we discuss scenario-based forecasts and evaluate the probability of exiting the ZLB region. In terms of log predictive scores and the Bayesian information criterion, the model outperforms a model substituting switching with stochastic volatility and another including intercept switching only combined with stochastic volatility.
     links:
