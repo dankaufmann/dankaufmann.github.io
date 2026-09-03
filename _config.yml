@@ -5,13 +5,13 @@ description: >-
   Daniel Kaufmann holds the Chair of Applied Macroeconomics at the University
   of Neuchâtel. Research on inflation, output, interest rate and exchange rate
   dynamics over long historical episodes and causal effects of monetary policy.
-url: "https://dankaufmann.github.io"
+url: "https://dankaufmann.com"
 baseurl: ""
 
 # --- DRAFT PHASE ---------------------------------------------------------
 # While true, every page emits <meta name="robots" content="noindex,nofollow">
 # and robots.txt disallows all crawlers. Set to false at launch (Phase 4).
-noindex: true
+noindex: false
 # -------------------------------------------------------------------------
 
 # Author name rendered in bold in publication lists
