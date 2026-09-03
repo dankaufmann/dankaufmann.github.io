@@ -6,8 +6,8 @@ title: Home
 # Daniel Kaufmann
 
 <img class="portrait" src="{{ '/assets/img/portrait.jpg' | relative_url }}" alt="Daniel Kaufmann"> 
-I hold the Chair of Applied Macroeconomics at the University of Neuchâtel and am a Research Fellow at the
-KOF Swiss Economic Institute, ETH Zurich. Moreover, I am co-editor of the Swiss
+I hold the Chair of Applied Macroeconomics at the University of Neuchâtel. Moreover, I am a Research Fellow at the
+KOF Swiss Economic Institute, ETH Zurich, co-editor of the Swiss
 Journal of Economics and Statistics and regularly write articles on
 policy-relevant macroeconomic questions. My research investigates inflation, output, interest rate, and exchange rate
 dynamics over long historical episodes. I am also interested in the causal

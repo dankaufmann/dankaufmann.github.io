@@ -42,7 +42,7 @@ historical:
   - region: United Kingdom
     items:
       - name: A Millennium of Macroeconomic Data
-        description: "Macroeconomic data compiled by the Bank of England from various sources. Series are spliced from various sources and regularly updated with modern data. These data are also available on"
+        description: "Macroeconomic data compiled by researchers of the Bank of England. Series are spliced from various sources and regularly updated with modern data. These data are also available on"
         links:
           - {label: "Link", url: "https://www.bankofengland.co.uk/statistics/research-datasets"}
           - {label: "FRED", url: "https://fred.stlouisfed.org/categories/33839"}
@@ -63,33 +63,38 @@ historical:
   - region: Switzerland
     items:
       - name: "Historical Statistics of Switzerland Online (HSSO)"
-        description: "Historical statistics for Switzerland and the cantons starting in the 19th century, maintained by the University of Zurich."
+        description: "Historical statistics for Switzerland starting in the 19th century, maintained by the University of Zurich."
         links: [{label: "Link", url: "https://hsso.ch/"}]
+      - name: "SNB historical time series"
+        description: "Macrofinancial time series assembled by the SNB at its centenary."
+        links: [{label: "Link", url: "https://www.snb.ch/en/the-snb/mandates-goals/statistics/statistics-pub/publication-history/historical-time-series"}]
+      - name: "SNB monthly statistical bulletin"
+        description: "Archive of the monthly statistical bulletin of the SNB. PDF files range back to 1926."
+        links: [{label: "Link", url: "https://www.snb.ch/en/the-snb/mandates-goals/statistics/statistics-pub/publication-history/monthly-statistical-bulletin"}]
 
 modern:
   - region: Multicountry
     items:
       - name: OECD
-        description: "Data on all aspects of the economy for OECD countries. STATS supports generating large cross-country data sets; DATA features less data but charting capabilities."
+        description: "Macroeconomic data on all aspects of the economy for OECD countries."
         links:
-          - {label: "STATS", url: "http://stats.oecd.org/"}
-          - {label: "DATA", url: "https://data.oecd.org/"}
+          - {label: "Link", url: "https://data.oecd.org/"}
       - name: IMF
-        description: "Macroeconomic data from the IMF. Good coverage of aspects of the international economy."
+        description: "Macroeconomic data collected by the IMF. Good coverage on international issues, such as capital flows."
         links: [{label: "Link", url: "http://data.imf.org"}]
 
   - region: United States
     items:
       - name: FRED
-        description: "Data collection covering all aspects of the US economy, with extensive on-site transformation and charting."
+        description: "Macrofinancial data collection covering the US economy. Partly comprises data from the OECD as well."
         links:
-          - {label: "FRED", url: "https://fred.stlouisfed.org/"}
+          - {label: "Link", url: "https://fred.stlouisfed.org/"}
       - name: ALFRED
         description: "ALFRED is the real-time vintage data collection of FRED."
         links:
-          - {label: "ALFRED", url: "https://alfred.stlouisfed.org/"}
+          - {label: "Link", url: "https://alfred.stlouisfed.org/"}
       - name: Philadelphia Fed
-        description: "Real-time data center assembling data and forecasts from the Greenbook, the Survey of Professional Forecasters and the Livingston Survey."
+        description: "Real-time data center assembling data and forecasts from the Fed's Greenbook, the Survey of Professional Forecasters and the Livingston Survey."
         links: [{label: "Link", url: "https://www.philadelphiafed.org/research-and-data/real-time-center"}]
 
   - region: Switzerland

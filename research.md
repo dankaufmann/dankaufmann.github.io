@@ -11,7 +11,7 @@ description: Publications, policy reports, and work in progress by Daniel Kaufma
   <a class="btn" href="#selected-other-publications">Other publications</a>
 </p>
 
-## Articles in journals {#articles-in-journals}
+## Articles in academic journals {#articles-in-journals}
 
 {% for p in site.data.publications.articles %}{% include publication.html item=p %}{% endfor %}
 
@@ -19,6 +19,6 @@ description: Publications, policy reports, and work in progress by Daniel Kaufma
 
 {% for p in site.data.publications.work_in_progress %}{% include publication.html item=p %}{% endfor %}
 
-## Selected other publications {#selected-other-publications}
+## Other publications {#selected-other-publications}
 
 {% for p in site.data.publications.other %}{% include publication.html item=p %}{% endfor %}

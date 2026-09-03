@@ -1,13 +1,6 @@
 # ---------------------------------------------------------------------------
 # Publications — ported from dankaufmann.com (Wix), 2026-09-01.
 #
-# Author order verified against Crossref (by DOI) and RePEc. The old Wix page
-# used a "with X" convention that did not record author order; every entry
-# below is the real published order. Author names all render the same way —
-# Daniel's is no longer bolded, since whose publication list this is is
-# self-evident. `me:` in _config.yml is now unused, kept only in case that
-# is reversed.
-#
 # Fixed button labels, in render order:
 #   paper | wp | update | appendix | code | data
 # Press coverage goes in `news:` and renders as small links, not buttons.
@@ -63,7 +56,7 @@ articles:
 
   - title: "Do sticky wages matter? New evidence from matched firm-survey and register data"
     authors:
-      - {name: "Anne Kathrin Funk", url: "https://sites.google.com/view/annekathrinfunk/home"}
+      - {name: "Anne Kathrin Funk", url: "https://sites.google.com/view/annekathrinfunk/"}
       - {name: "Daniel Kaufmann"}
     year: 2022
     journal: "Economica"
