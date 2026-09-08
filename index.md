@@ -23,7 +23,7 @@ macroeconomics · monetary economics · monetary history · forecasting
 
 ## News
 
-{% for n in site.data.news %}{% include news.html item = n %}{% endfor %}
+{% for n in site.data.news %}{% include news.html items = n %}{% endfor %}
 
 - <span class="date">3 September 2026</span>I am happy to share that my new website is live!
 - <span class="date">1 August 2026</span>For the next two years, I will serve as vice-dean of the Faculty of Economics and Business ([announcement](https://www.linkedin.com/posts/facult%C3%A9-des-sciences-%C3%A9conomiques-universit%C3%A9-de-neuch%C3%A2tel_unine-teamunine-unineabrseco-activity-7497551367364894720-efzC/){:target="_blank" rel="noopener"}). The director of the master's program will be [Gabriel Loumeau](https://sites.google.com/view/gabrielloumeau/){:target="_blank" rel="noopener"}. I wish him all the best in this new role.
