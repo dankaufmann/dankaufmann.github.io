@@ -3,7 +3,7 @@ News in a a two-column table
 Usage: {% include news.html items=group.items %}
 {%- endcomment -%}
 <ul class="news">
-  {%- for i in include.items %}
+  {%- for i in include.items  limit:5 %}
   <li><span class = "date">{{ i.date }}</span>{{ i.text }}</li>
   {%- endfor %}
 </ul>
